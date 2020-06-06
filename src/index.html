@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Juan Sebastián</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-header">
+            <a href="#home" class="logo">Juan Sebastián</a>
+            <a class="icon" onclick="showNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav id="routes">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1 id="home">
+            Hey there! I'm Juan Sebastián
+        </h1>
+        <img class="profilepic"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQESI4eSdBHx3g/profile-displayphoto-shrink_200_200/0?e=1596672000&v=beta&t=kZC8h_ymOWh8u7kW64noY8CGlORlgBO7Dn_6WVaT0eg"
+            alt="">
+        <h2 id="about">About me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique nobis eum repellendus dolorem
+            consequatur asperiores cum pariatur itaque velit molestias provident totam eos fuga, delectus blanditiis?
+            Ipsa, voluptatibus vitae.</p>
+        <button class="contact-button">Contact me <i class="right-arrow">&#8594;</i></button>
+        <h2 id="work">Work</h2>
+        <div class="work-wrapper">
+            <article class="project">
+                <h3>ECCO</h3>
+                <div class="project-content">
+                    <img src="./assets/ecco.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio in mollitia laborum quas quasi ex
+                        incidunt quam enim, sequi dignissimos quis! Dolorum, nihil! Fuga, quae. Expedita consequatur ab
+                        corporis inventore?</p>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Worki</h3>
+                <div class="project-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio in mollitia laborum quas quasi ex
+                        incidunt quam enim, sequi dignissimos quis! Dolorum, nihil! Fuga, quae. Expedita consequatur ab
+                        corporis inventore?</p>
+                    <img src="./assets/worki.png" alt="">
+                </div>
+            </article>
+        </div>
+        <h2 id="contact">Contact</h2>
+    </main>
+    <footer>
+        <p>Made by </p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
