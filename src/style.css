@@ -1,0 +1,144 @@
+body {
+    background-image: linear-gradient(-45deg,#dadde7,#f6f7ff);
+    background-repeat: repeat-x;
+    font-family: Orkney,Arial,sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.contact-button {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 25px 0 rgba(38, 42, 97, 0.3);
+    color: lightyellow;
+    background: linear-gradient(-45deg,#4c6cd3,#27326d);
+    font-size: 1.3rem;
+    padding: 0.3rem 2rem;
+}
+
+.contact-button:hover .right-arrow {
+    transform: translate(10px);
+}
+
+.header {
+    border: 1px solid;
+    color: #dadde7;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header a {
+    background: linear-gradient(-45deg,#4c6cd3,#27326d);
+    color: #dadde7;
+    display: block;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+  
+.header a.icon{
+    border-radius: 5px;
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    opacity: 10;
+    right: 0;
+    top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    transition: all .5s ease-out;
+}
+
+.main-content {
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.profilepic {
+    border-radius: 50%;
+}
+
+.profilepic:hover {
+    box-shadow: rgba(15, 31, 87, 10) 0 0 15px;
+    transform: scale(1.05); /* Animation */
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 rgba(38, 42, 97, 0.3);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 10px;
+    width: 80%;
+}
+
+.project-content {
+    display: flex;
+    font-size: 24px;
+}
+
+.project-content img {
+    object-fit: contain;
+    height: auto;
+    width: 60%;
+}
+
+.show {
+    animation: img-appears 1.5s ease-in;
+}
+  
+@keyframes img-appears {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.right-arrow {
+    display: inline-block;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    transition: all 500ms ease;
+}
+
+#routes {
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#routes.showing {
+    opacity: 1;
+    position: static;
+    visibility: visible;
+    transition: opacity 1s linear;
+}
+
+#routes a {
+    border: 1px solid aliceblue;
+    margin: 0;
+    transition: all .5s ease-out;
+}
+
+#routes a:hover, .logo:hover {
+    color: black;
+}
+
+@media screen and (min-width:1024px) {
+    .work-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
