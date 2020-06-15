@@ -319,7 +319,7 @@ input:checked + .slider:before {
 
 .projects-container figure {
     cursor: pointer;
-    margin: 0 2rem;
+    margin: 2rem auto;
     position: relative;
     text-align: justify;
 }
