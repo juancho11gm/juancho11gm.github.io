@@ -320,6 +320,7 @@ input:checked + .slider:before {
 .projects-container figure {
     cursor: pointer;
     margin: 2rem auto;
+    max-width: 90%;
     position: relative;
     text-align: justify;
 }
