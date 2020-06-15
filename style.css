@@ -334,7 +334,7 @@ input:checked + .slider:before {
 }
 
 figure .caption {
-    background-color: white;
+    background-color: var(--html-bg-color);
     box-sizing: border-box;
     font-size: 1.25rem;
     height: 100%;
@@ -360,7 +360,7 @@ figure .caption {
     z-index: -1;
 }
 
-.caption, .caption::before, figure img {
+.caption, figure img {
     border-radius: 20px;
     box-shadow: 0 0 25px 0 rgba(38, 42, 97, 0.3);
 }
