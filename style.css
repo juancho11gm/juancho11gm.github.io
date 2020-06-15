@@ -1,3 +1,12 @@
+.answers-saved {
+	display: none;
+	text-align: center;
+}
+
+.answers-validation + .answers-saved {
+	display: block;
+}
+
 :root {
    /*  --html--light-color: #dadde7;
     --html--dark-color: #24292e; 
@@ -98,12 +107,33 @@ a:visited {
     margin-bottom: 12px;
 }
 
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color:purple;
+    border-width: 2px;
+}
+
 .contact-form textarea {
     border-radius: 1rem;
     outline: none;
     padding: 1.5rem;
     resize: none;
     max-width: 95%;
+}
+
+.name-validation-error .name-error,
+.email-validation-error .email-error,
+.message-validation-error .message-error {
+    color: red;
+    display: block;
+}
+
+.name-error, .email-error, .message-error {
+    display: none;
+    margin-top: 0;
+}
+
+.hide-form.contact-form {
+	display: none;
 }
 
 .footer {

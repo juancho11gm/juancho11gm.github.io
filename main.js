@@ -1,12 +1,19 @@
 (() => {
   let btnNav = document.querySelector('.menu-toggle');
   let btnResume = document.querySelector('.btn.btn-resume');
+  let btnSubmit = document.querySelector('.btn.btn-send');
   let sliderDarkMode = document.getElementById('dark-mode');
-
-  sliderDarkMode.addEventListener('change', (event) => darkMode(event));
-  btnNav.addEventListener('click', () => showNav());
-  btnResume.addEventListener('click', () => openResumePDF());
-  window.addEventListener('scroll', onScroll);
+  let contactForm = document.querySelector('.contact-form');
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('message');
+  const NAME_CLASS = 'name-validation-error';
+  const EMAIL_CLASS = 'email-validation-error';
+  const MESSAGE_CLASS = 'message-validation-error';
+  const ANSWERS_URL = 'https://juansebastian-portfolio.herokuapp.com/contact';
+  const ANSWERS_CLASS = 'answers-validation';
+  const FORM_CLASS = 'hide-form';
+  let formSent = false;
 
   function onScroll() {
     for (var item of document.querySelectorAll('.work-content img')) {
@@ -47,11 +54,71 @@
   }
 
   function openResumePDF() {
-    window.open('https://drive.google.com/file/d/1CiX-0hhW8y85Msn08c6bf_ufXOkb47Ht/view?usp=sharing','_blank');
+    window.open('https://drive.google.com/file/d/1CiX-0hhW8y85Msn08c6bf_ufXOkb47Ht/view?usp=sharing', '_blank');
   }
 
   function showNav() {
     let routes = document.querySelector('.header-routes');
     routes.classList.contains('showing') ? routes.classList.remove('showing') : routes.classList.add('showing');
   }
+
+  function validateForm(nameValue, emailValue, messageValue) {
+    let valid = true;
+    !nameValue ? (contactForm.classList.add(NAME_CLASS), valid = false) : contactForm.classList.remove(NAME_CLASS);
+    !emailValue ? (contactForm.classList.add(EMAIL_CLASS), valid = false) : contactForm.classList.remove(EMAIL_CLASS);
+    !messageValue ? (contactForm.classList.add(MESSAGE_CLASS), valid = false) : contactForm.classList.remove(MESSAGE_CLASS);
+    return valid;
+  }
+
+  async function saveAnswers(answers){
+    console.log(answers);
+    formSent = true;
+    const response = await fetch(ANSWERS_URL, {
+      method: 'POST',
+      //mode:'no-cors',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: answers.nameValue,
+        email: answers.emailValue,
+        message: answers.messageValue
+      })
+    }).then(data => {
+      console.log(data);
+      if(data['ok']) {
+        contactForm.classList.add(ANSWERS_CLASS); //show message answers were successfully saved
+        contactForm.classList.add(FORM_CLASS); //hide form
+        contactForm.reset(); //reset form
+      }
+      btnSubmit.textContent = 'Send';
+      formSent = false;
+    });
+  }
+
+  function sendForm(event) {
+    event.preventDefault();
+    const nameValue = name.value;
+    const emailValue = email.value;
+    const messageValue = message.value;
+    if (validateForm(nameValue, emailValue, messageValue)) {
+      let answers = {
+        nameValue,
+        emailValue,
+        messageValue,
+      };
+      if(!formSent){
+        btnSubmit.textContent = 'Sending...';
+        saveAnswers(answers);
+      }
+    }
+  }
+
+  sliderDarkMode.addEventListener('change', (event) => darkMode(event));
+  btnNav.addEventListener('click', showNav);
+  btnResume.addEventListener('click', openResumePDF);
+  window.addEventListener('scroll', onScroll);
+  contactForm.addEventListener('submit', sendForm);
+
 })();
