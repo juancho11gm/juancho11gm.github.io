@@ -31,7 +31,7 @@ a:visited {
 
 .banner {
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .5)), url('https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Fbanner.jpg?alt=media&token=2e472c8c-8a12-4377-aee1-ee1adaeabfde');
+    background: linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .5)), url('assets/banner.jpeg');
     background-attachment: fixed;
     background-position: 60% 50%;
     background-repeat: no-repeat;
