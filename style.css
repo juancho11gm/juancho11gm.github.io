@@ -8,10 +8,6 @@
 }
 
 :root {
-   /*  --html--light-color: #dadde7;
-    --html--dark-color: #24292e; 
-    #181719
-    */
     --html--light-color: #f6f7ff;
     --html-bg-color: white;
     --html-f-color: #24292e;
@@ -183,7 +179,7 @@ a:visited {
 
 .header-nav ul li a {
     color: inherit;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -235,7 +231,7 @@ h4 {
 
 .main-title {
     animation: translate 2s ease forwards;
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
     max-width: 700px;
     --x-translate: 0%;
@@ -246,7 +242,7 @@ h4 {
     border-radius: 5px;
     color: var(--html-f-color);
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 10;
     padding: .5rem 2rem;
     transition: all .5s ease-out;
@@ -470,10 +466,10 @@ figure .caption {
 .tech-container {
     column-gap: 15px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 350px));
+    grid-template-columns: auto auto;
     justify-content: center;
-    margin: 1rem auto;
-    padding: 10px 15px 10px 10px;
+    margin: .5rem auto;
+    padding: 10px 10px 10px 5px;
     row-gap: 10px;
     width: 95%;
 }
@@ -481,8 +477,9 @@ figure .caption {
 .tech-container-item {
     align-items: center;
     display: flex;
-    font-size: 1rem;
+    font-size: .8rem;
     overflow: auto;
+    margin: 0;
 }
 
 .tech-container-item:hover {
@@ -502,7 +499,7 @@ figure .caption {
     display: block;
     height: auto;
     object-fit: contain;
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 60%;
 }
 
@@ -521,12 +518,24 @@ figure .caption {
         letter-spacing: .5rem;
     }
 
+    .main-title {
+        font-size: 3em;
+    }
+
     .projects-container {
         align-items: center;
     }
 
     .projects-container figure{
         max-width: 40%;
+    }
+
+    .tech-container {
+        grid-template-columns: repeat(3, minmax(auto, 40%));
+    }
+
+    .tech-container-item {
+        font-size: 1rem;
     }
 
     .work-wrapper {
