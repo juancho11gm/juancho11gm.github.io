@@ -6,7 +6,7 @@
     --html--light-color: #f6f7ff;
     --html-bg-color: white;
     --html-f-color: #24292e;
-    --html-font-size: 1.5rem;
+    --html-font-size: 1rem;
     --light-bg: #fff;
     --nav-height: 8vh;
     --f-color: #eceeef;
@@ -213,7 +213,7 @@ h4 {
     border-radius: 5px;
     color: var(--html-f-color);
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     opacity: 10;
     padding: .5rem 2rem;
     transition: all .5s ease-out;
@@ -444,6 +444,7 @@ figure .caption {
     align-items: center;
     display: flex;
     font-size: 1rem;
+    overflow: auto;
 }
 
 .tech-container-item:hover {
