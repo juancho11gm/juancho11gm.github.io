@@ -46,10 +46,11 @@
     if (event.target.checked) {
       document.documentElement.style.setProperty('--html-bg-color', '#24292e');
       document.documentElement.style.setProperty('--html-f-color', 'white');
-
+      document.documentElement.style.setProperty('--circles-color', '#24292e');
     } else {
       document.documentElement.style.setProperty('--html-bg-color', 'white');
       document.documentElement.style.setProperty('--html-f-color', '#24292e');
+      document.documentElement.style.setProperty('--circles-color', '#27326d');
     }
   }
 
