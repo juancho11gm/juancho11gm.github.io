@@ -72,7 +72,6 @@
   }
 
   async function saveAnswers(answers){
-    console.log(answers);
     formSent = true;
     const response = await fetch(ANSWERS_URL, {
       method: 'POST',
@@ -87,7 +86,6 @@
         message: answers.messageValue
       })
     }).then(data => {
-      console.log(data);
       if(data['ok']) {
         contactForm.classList.add(ANSWERS_CLASS); //show message answers were successfully saved
         contactForm.classList.add(FORM_CLASS); //hide form
