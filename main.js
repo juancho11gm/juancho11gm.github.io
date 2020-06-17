@@ -1,5 +1,5 @@
 (() => {
-  let btnNav = document.querySelector('.menu-toggle');
+  let btnNav = document.querySelector('.menu .toggler');
   let btnResume = document.querySelector('.btn.btn-resume');
   let btnSubmit = document.querySelector('.btn.btn-send');
   let sliderDarkMode = document.getElementById('dark-mode');
