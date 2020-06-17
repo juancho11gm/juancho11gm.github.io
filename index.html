@@ -8,15 +8,17 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="og:title" property="og:title" content="Juan Sebastián González website">
     <meta name="og:description" property="og:description" content="Professional experience, projects and tech skills.">
-    <meta property="og:image"
-        content="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Fog%3Aimage.jpg?alt=media&token=6b4a4219-400e-4848-a8af-f12b5c87375d">
+    <meta property="og:image" content="assets/og_image.jpg">
     <meta property="og:url" content="https://juancho11gm.github.io/portfolio/" />
     <meta name="twitter:title" content="Juan Sebastián González website" />
     <meta name="twitter:description" content="Professional experience, projects and tech skills." />
+    <meta property="twitter:image" content="assets/og_image.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/assets/ms-icon-70x70.png">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Juan Sebastián</title>
     <!-- Font awesome -->
@@ -45,10 +47,11 @@
                 <li>
                     <a href="#home" class="logo">Juan Sebastián</a>
                 </li>
-                <li>
-                    <button class="menu-toggle" aria-label="open menu">
-                        <i class="icon fa fa-bars" aria-hidden="true"></i>
-                    </button>
+                <li class="menu">
+                    <input type="checkbox" class="toggler" aria-label="hamburger menu">
+                    <div class="hamburger-container">
+                        <div class="hamburger-icon"></div>
+                    </div>
                 </li>
             </ul>
             <ul class="header-routes">
@@ -68,7 +71,7 @@
             </p>
             <button onclick="location.href='#contact'" class="btn btn-contact">
                 Contact me
-                <i class="right-arrow">&#8594;</i>
+                <i class="right-arrow" aria-hidden="true">&#8594;</i>
             </button>
             <img class="arrow-down" src="assets/icons/down-arrow.png" role="presentation">
         </section>
@@ -322,7 +325,7 @@
                 <address class="side-icon-boxes">
                     <div class="side-icon-box">
                         <div class="side-icon">
-                            <i class="fas fa-location-arrow"></i> 
+                            <i class="fas fa-location-arrow"></i>
                         </div>
                         <p>
                             <strong>Address: </strong> Bogotá. Colombia
@@ -379,4 +382,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
