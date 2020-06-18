@@ -1,57 +1,32 @@
 (() => {
-  let btnNav = document.querySelector('.menu .toggler');
-  let btnResume = document.querySelector('.btn.btn-resume');
-  let btnSubmit = document.querySelector('.btn.btn-send');
-  let sliderDarkMode = document.getElementById('dark-mode');
-  let contactForm = document.querySelector('.contact-form');
+  const btnNav = document.querySelector('.menu .toggler');
+  const btnResume = document.querySelector('.btn.btn-resume');
+  const btnSubmit = document.querySelector('.btn.btn-send');
+  const sliderDarkMode = document.getElementById('dark-mode');
+  const contactForm = document.querySelector('.contact-form');
   const name = document.getElementById('name');
   const email = document.getElementById('email');
   const message = document.getElementById('message');
-  const NAME_CLASS = 'name-validation-error';
-  const EMAIL_CLASS = 'email-validation-error';
-  const MESSAGE_CLASS = 'message-validation-error';
   const ANSWERS_URL = 'https://juansebastian-portfolio.herokuapp.com/contact';
   const ANSWERS_CLASS = 'answers-validation';
+  const CAPTCHA_CLASS = 'captcha-validation-error';
+  const EMAIL_CLASS = 'email-validation-error';
   const FORM_CLASS = 'hide-form';
+  const MESSAGE_CLASS = 'message-validation-error';
+  const NAME_CLASS = 'name-validation-error';
   let formSent = false;
 
-  function onScroll() {
-    for (var item of document.querySelectorAll('.work-content img')) {
-      elementVisible(item, 'show');
-    }
-    /* for (var item of document.querySelectorAll('.tech-container article:nth-of-type(odd) figcaption')) {
-      elementVisible(item,'animation-left');
-    }
-    for (var item of document.querySelectorAll('.tech-container article:nth-of-type(even) figcaption')) {
-      elementVisible(item,'animation-right');
-    } */
-  }
-
-  function elementVisible(el, className) {
-    let top = el.offsetTop;
-    let height = el.offsetHeight;
-    let bottom = top + height;
-
-    let IsOverBottom = top > (window.pageYOffset + window.innerHeight);
-    let IsBeforeTop = bottom < window.pageYOffset;
-
-    if (!IsOverBottom && !IsBeforeTop) {
-      el.classList.add(className);
-    } else {
-      el.classList.remove(className);
-    }
-  }
 
   function darkMode(event) {
     if (event.target.checked) {
       document.documentElement.style.setProperty('--html-bg-color', '#24292e');
       document.documentElement.style.setProperty('--html-f-color', 'white');
       document.documentElement.style.setProperty('--circles-color', '#24292e');
-    } else {
-      document.documentElement.style.setProperty('--html-bg-color', 'white');
-      document.documentElement.style.setProperty('--html-f-color', '#24292e');
-      document.documentElement.style.setProperty('--circles-color', '#27326d');
+      return;
     }
+    document.documentElement.style.setProperty('--html-bg-color', 'white');
+    document.documentElement.style.setProperty('--html-f-color', '#24292e');
+    document.documentElement.style.setProperty('--circles-color', '#27326d');
   }
 
   function openResumePDF() {
@@ -71,7 +46,7 @@
     return valid;
   }
 
-  async function saveAnswers(answers){
+  async function saveAnswers(answers) {
     formSent = true;
     const response = await fetch(ANSWERS_URL, {
       method: 'POST',
@@ -86,7 +61,7 @@
         message: answers.messageValue
       })
     }).then(data => {
-      if(data['ok']) {
+      if (data['ok']) {
         contactForm.classList.add(ANSWERS_CLASS); //show message answers were successfully saved
         contactForm.classList.add(FORM_CLASS); //hide form
         contactForm.reset(); //reset form
@@ -94,6 +69,16 @@
       btnSubmit.textContent = 'Send';
       formSent = false;
     });
+  }
+
+  function validateCaptcha() {
+    let response = grecaptcha.getResponse();
+    if (!response.length) {
+      contactForm.classList.add(CAPTCHA_CLASS);
+      return false;
+    }
+    contactForm.classList.remove(CAPTCHA_CLASS)
+    return true;
   }
 
   function sendForm(event) {
@@ -107,7 +92,8 @@
         emailValue,
         messageValue,
       };
-      if(!formSent){
+      if(!validateCaptcha()) return;
+      if (!formSent) {
         btnSubmit.textContent = 'Sending...';
         saveAnswers(answers);
       }
@@ -117,7 +103,6 @@
   sliderDarkMode.addEventListener('change', (event) => darkMode(event));
   btnNav.addEventListener('click', showNav);
   btnResume.addEventListener('click', openResumePDF);
-  window.addEventListener('scroll', onScroll);
   contactForm.addEventListener('submit', sendForm);
 
 })();
