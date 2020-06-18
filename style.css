@@ -90,6 +90,7 @@ a:visited {
 
 .btn.btn-resume {
     display: block;
+    margin: 0 auto;
 }
 
 .captcha-container {
@@ -706,7 +707,7 @@ figure .caption {
 
 .tech-container-item p {
     font-size: .8rem;
-    margin: 0;
+    margin: .5rem;
 }
 
 .tech-container-item:hover {
@@ -746,6 +747,10 @@ figure .caption {
 }
 
 @media screen and (min-width:1024px) {
+    .btn.btn-resume {
+        margin: 0;
+    }
+
     .description {
         margin: 0 0 0 3rem;
     }
