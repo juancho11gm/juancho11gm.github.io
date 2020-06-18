@@ -15,13 +15,11 @@
     <meta property="twitter:image" content="assets/og_image.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="/assets/ms-icon-70x70.png">
-    <!-- Fonts -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png?">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Juan Sebastián</title>
-    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9dd12f7cf1.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169546050-1"></script>
@@ -37,7 +35,7 @@
 <body>
     <div class="mode-icon">
         <label class="mode-switch" for="dark-mode">
-            <input type="checkbox" id="dark-mode">
+            <input type="checkbox" id="dark-mode" class="input-dark-mode">
             <span class="slider round"></span>
         </label>
     </div>
@@ -66,7 +64,7 @@
                 Hey there! I'm Juan Sebastián González.
             </h1>
             <p class="main-description">
-                I'm a systems engineer, with emphasis on information systems and software
+                I'm a software engineer, with emphasis on information systems and software
                 construction.
             </p>
             <button onclick="location.href='#contact'" class="btn btn-contact">
@@ -83,13 +81,13 @@
                 src="https://media-exp1.licdn.com/dms/image/C4E03AQESI4eSdBHx3g/profile-displayphoto-shrink_200_200/0?e=1596672000&v=beta&t=kZC8h_ymOWh8u7kW64noY8CGlORlgBO7Dn_6WVaT0eg"
                 alt="Juan Sebastián's profile picture">
             <article class="description">
-                <p>I am <strong>Juan Sebastián González</strong>.</p>
-                <p>I am characterized by my capacity for abstraction in solving individual and group
-                    problems. My professional identity is focused on strategic thinking and the vocation of service to
-                    others; mainly, in the teaching or transfer of knowledge. I consider myself passionate about
-                    learning in areas
-                    such as: data analysis, information management and <strong>web development</strong>.
+                <p>Hi, I am <strong>Juan Sebastián González</strong>.</p>
+                <p>I am a software engineer that loves to create great experiences through the software. I love to keep learning about tech, it helps me to grow and to improve my professional quality.
+                    I started with web development as a hobby, then I realized how powerful could be the software that you are thinking on... I consider myself passionate about
+                    learning in areas such as: data analysis, information management and <strong>web development</strong>.
                 </p>
+                <p>I think that both in life and code... break down a big piece of the problem into smaller components. These will become simple enough to be solved.                </p>
+                <p></p>
                 <p>Age: 20 years</p>
                 <p>Nationality: Colombian</p>
                 <p>Languages: English, spanish</p>
@@ -129,14 +127,14 @@
                 </div>
             </article>
         </section>
-        <h2 id="technologies" class="title">Skills & tools</h2>
+        <h2 id="technologies" class="title">Skills</h2>
+        <p class="tech-description">Web development advanced concepts.</p>
         <section class="section tech-container">
-            <p class="tech-description">The skills, tools and technologies I use to complete my tech goals:</p>
             <figure class="tech-container-item">
-                <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fcss.png?alt=media&token=2af6b053-861f-43c0-8778-608fb70cc317"
-                    alt="css icon">
+                <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fjavascript.png?alt=media&token=ee8ee137-d00c-442d-80c8-93da59de02aa"
+                    alt="javascript icon">
                 <figcaption>
-                    <p>CSS3</p>
+                    <p>JavaScript.</p>
                 </figcaption>
             </figure>
             <figure class="tech-container-item">
@@ -147,12 +145,15 @@
                 </figcaption>
             </figure>
             <figure class="tech-container-item">
-                <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fjavascript.png?alt=media&token=ee8ee137-d00c-442d-80c8-93da59de02aa"
-                    alt="javascript icon">
+                <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fcss.png?alt=media&token=2af6b053-861f-43c0-8778-608fb70cc317"
+                    alt="css icon">
                 <figcaption>
-                    <p>JavaScript.</p>
+                    <p>CSS3.</p>
                 </figcaption>
             </figure>
+        </section>
+        <p class="tech-description">Tools and technologies I use to complete my tech goals.</p>
+        <section class="section tech-container">
             <figure class="tech-container-item">
                 <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fangular.png?alt=media&token=97172e01-8179-4329-800d-4f1a1339e527"
                     alt="angular icon">
@@ -171,7 +172,7 @@
                 <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Ftechnologies%2Fheroku.png?alt=media&token=5eeb981e-af0c-4979-b27a-3b9b9209c188"
                     alt="heroku icon">
                 <figcaption>
-                    <p>Heroku.</p>
+                    <p>Heroku</p>
                 </figcaption>
             </figure>
             <figure class="tech-container-item">
@@ -217,7 +218,7 @@
                 </figcaption>
                 </article>
         </section>
-        <h2 id="projects" class="title">Major projects</h2>
+        <h2 id="projects" class="title">Projects</h2>
         <section class="projects-container">
             <figure>
                 <img src="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Fprojects%2Fhealthy-routine.png?alt=media&token=4d5ea725-b6f7-449d-a61a-ba615d39603f"
@@ -245,7 +246,7 @@
                     Project carried out in the Web Services subject. It was developed using
                     SOAP and REST for the publication of hosting, transportation, food services etc.
                     Backend developed in Django/SpringBoot and Frontend in Angular.
-                    <p><strong>#Angular, #SpringBoot, #DJango.</strong></p>
+                    <p><strong>Angular, TypeScript, SpringBoot, DJango.</strong></p>
                 </figcaption>
             </figure>
 
@@ -259,7 +260,7 @@
                     <h4>November 2019</h4>
                     Banking portal where the clients manage a virtual currency called JaveCoin. Developed using PHP and
                     MySQL.
-                    <p><strong>#PHP, #MYSQL.</strong></p>
+                    <p><strong>HTML, Bootstrap, PHP, MYSQL.</strong></p>
                 </figcaption>
             </figure>
             <figure>
@@ -272,7 +273,7 @@
                     <h4>January-June 2020</h4>
                     Worki is a mobile and web app focused on the management of recruitment processes in companies in the
                     entertainment sector. Developed using Flutter, SpringBoot and MongoDB.
-                    <p><strong>#Flutter, #SpringBoot, #Heroku, #Firebase #REST #AWS.</strong></p>
+                    <p><strong>Flutter, SpringBoot, Heroku, Firebase, REST, AWS.</strong></p>
                 </figcaption>
             </figure>
 
@@ -285,7 +286,7 @@
                         class="btn btn-github">Visit GitHub</button>
                     <h4>January 2020</h4>
                     Mobile application that request the movieDB API with REST services.
-                    <p><strong>#Flutter, #REST.</strong></p>
+                    <p><strong>Flutter, REST.</strong></p>
                 </figcaption>
             </figure>
             <figure>
@@ -298,7 +299,7 @@
                     <h4>June 2020</h4>
                     Project developed with PushDev. The main idea was to build the <a href="">Moramia</a> website with a
                     shopping cart using HMTL, SASS, JavaScript, NodeJS and MongoDB.
-                    <p><strong>#JavaScript, #HTML, #SCSS, #NodeJS.</strong></p>
+                    <p><strong>JavaScript, HTML, SCSS, NodeJS.</strong></p>
                 </figcaption>
             </figure>
         </section>
@@ -315,6 +316,10 @@
                 <textarea class="form-message" name="message" id="message" cols="30" rows="10" aria-required="true"
                     required spellcheck="false"></textarea>
                 <p class="message-error">Please type a message</p>
+                <div class="captcha-container">
+                    <div class="g-recaptcha" data-sitekey="6LetGKYZAAAAAIVbbMqk2nl-ZYcyktgP6oKN_bA4"></div>
+                    <p class="captcha-error">Captcha is required</p>
+                </div>
                 <button type="submit" class="btn btn-send">Send</button>
             </form>
             <div class="answers-saved">
@@ -379,7 +384,9 @@
             </li>
         </ul>
         <p>Made by Juan Sebastián González. 2020</p>
+        <a href="https://undraw.co/illustrations" rel="noopener" target="_blank">Illustrations</a>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="main.js"></script>
 </body>
 
