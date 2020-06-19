@@ -105,11 +105,11 @@ a:visited {
 }
 
 .circles {
+    padding: 0;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
     z-index: 0;
 }
 
@@ -451,7 +451,7 @@ h4 {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    z-index: 3;
+    z-index: 4;
 }
 
 .mode-switch {
@@ -608,10 +608,6 @@ figure .caption {
 .section.section-me {
     align-items: center;
     display: block;
-}
-
-.section.section-form {
-    padding: 3rem;
 }
 
 .show {
