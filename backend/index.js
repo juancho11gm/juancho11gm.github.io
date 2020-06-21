@@ -17,7 +17,8 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MO
 let answerSchema = new mongoose.Schema({
   name: String,
   email: String,
-  message: String
+  message: String,
+  date: Date
 });
 
 let Answer = mongoose.model('Answer', answerSchema);
