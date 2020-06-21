@@ -58,7 +58,8 @@
       body: JSON.stringify({
         name: answers.nameValue,
         email: answers.emailValue,
-        message: answers.messageValue
+        message: answers.messageValue,
+        date: new Date()
       })
     }).then(data => {
       if (data['ok']) {
