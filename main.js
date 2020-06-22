@@ -14,6 +14,7 @@
   const FORM_CLASS = 'hide-form';
   const MESSAGE_CLASS = 'message-validation-error';
   const NAME_CLASS = 'name-validation-error';
+  const CV_URL = 'https://drive.google.com/file/d/1qGeiPhT-razfIUzUxFiUVX68eFvhflMg/view?usp=sharing';
   let formSent = false;
 
 
@@ -30,7 +31,7 @@
   }
 
   function openResumePDF() {
-    window.open('https://drive.google.com/file/d/1CiX-0hhW8y85Msn08c6bf_ufXOkb47Ht/view?usp=sharing', '_blank');
+    window.open(CV_URL, '_blank');
   }
 
   function showNav() {
