@@ -201,10 +201,12 @@ a:visited {
     width: 150px;
 }
 
-.contact-form {
+form.contact-form {
     display: flex;
     flex-direction: column;
     text-align: start;
+    justify-content: center;
+    margin: 0 auto;
     width: 90%;
 }
 
@@ -699,6 +701,7 @@ figure .caption {
     height: 80px;
     margin: 1rem 2rem;
     width: 20%;
+    transition: all .2s ease-in;
 }
 
 .tech-container-item p {
@@ -747,12 +750,22 @@ figure .caption {
         margin: 0;
     }
 
+    .btn.btn-send {
+        margin: auto;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    
     .description {
         margin: 0 0 0 3rem;
     }
     
     .section.section-me {
         display:flex;
+    }
+
+    .section-form {
+        width: 60%;
     }
     
     .logo {
