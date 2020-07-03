@@ -554,6 +554,17 @@ h4 {
     margin-top: 1rem;
 }
 
+.project-tool {
+   background-color: var(--html-f-color) ;
+   border-radius: .3em;
+   box-shadow: 0 0 5px 0 var(--html-f-color);
+   color: var(--html-bg-color);
+   display: inline-block;
+   margin: .3em;
+   margin-bottom: 0.1em;
+   padding: .3em;
+}
+
 figure .caption {
     background-color: var(--html-bg-color);
     box-sizing: border-box;
