@@ -94,7 +94,7 @@
         emailValue,
         messageValue,
       };
-      if(!validateCaptcha()) return;
+      if (!validateCaptcha()) return;
       if (!formSent) {
         btnSubmit.textContent = 'Sending...';
         saveAnswers(answers);
@@ -104,6 +104,11 @@
 
   sliderDarkMode.addEventListener('change', (event) => darkMode(event));
   btnNav.addEventListener('click', showNav);
+  btnNav.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+      showNav();
+    }
+  });
   btnResume.addEventListener('click', openResumePDF);
   contactForm.addEventListener('submit', sendForm);
 
