@@ -538,7 +538,6 @@ h4 {
 }
 
 .projects-container figure {
-    cursor: pointer;
     max-width: 90%;
     position: relative;
     text-align: justify;
@@ -548,7 +547,7 @@ h4 {
    opacity: 1;
    visibility: visible;
 }
-z
+
 .project-title {
     display: inline-block;
     margin-top: 1rem;
