@@ -15,6 +15,7 @@
 }
 
 :root {
+    --header-height: 6vh;
     --html--light-color: #f6f7ff;
     --html-bg-color: white;
     --html-f-color: #24292e;
@@ -22,6 +23,8 @@
     --light-bg: #fff;
     --f-color: #eceeef;
     --circles-color: #27326d;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
 }
 
 body, html {
@@ -354,7 +357,7 @@ form.contact-form {
     border-bottom: 1px solid var(--html-f-color);
     font-family: 'Amatic SC', cursive;;
     color: var(--html-f-color);
-    height: 6vh;
+    height: var(--header-height);
     position: fixed;
     left: 0;
     right: 0;
@@ -381,6 +384,7 @@ form.contact-form {
     color: inherit;
     font-size: 1.5rem;
     text-decoration: none;
+    transition: .25s ease-in;
 }
 
 .header-routes {
@@ -396,21 +400,16 @@ form.contact-form {
 
 .header-routes li {
     border: 1px solid var(--html-f-color);
-    transition: all .5s ease-out;
 }
 
 .header-routes a:hover, .logo:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .header-routes.showing {
     opacity: 1;
     visibility: visible;
-    transition: opacity 1s linear;
-}
-
-html {
-    scroll-behavior: smooth;
+    transition: opacity .5s linear;
 }
 
 h4 {
