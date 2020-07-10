@@ -9,20 +9,20 @@
 
 .arrow-down {
     animation: bounce 2s infinite;
+    bottom: 0;
     position: absolute;
     width: 60px;
-    bottom: 0;
 }
 
 :root {
+    --circles-color: #27326d;
+    --f-color: #eceeef;
     --header-height: 6vh;
     --html--light-color: #f6f7ff;
     --html-bg-color: white;
     --html-f-color: #24292e;
     --html-font-size: 1rem;
     --light-bg: #fff;
-    --f-color: #eceeef;
-    --circles-color: #27326d;
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
 }
@@ -108,10 +108,10 @@ a:visited {
 }
 
 .circles {
-    padding: 0;
-    position: fixed;
     bottom: 0;
     left: 0;
+    padding: 0;
+    position: fixed;
     right: 0;
     z-index: 0;
 }
@@ -207,9 +207,9 @@ a:visited {
 form.contact-form {
     display: flex;
     flex-direction: column;
-    text-align: start;
     justify-content: center;
     margin: 0 auto;
+    text-align: start;
     width: 90%;
 }
 
@@ -240,10 +240,10 @@ form.contact-form {
 
 .contact-form textarea {
     border-radius: 1rem;
+    max-width: 95%;
     outline: none;
     padding: 1.5rem;
     resize: none;
-    max-width: 95%;
 }
 
 .name-validation-error .name-error,
@@ -293,10 +293,10 @@ form.contact-form {
     background: var(--html-f-color);
     height: 4px;
     position: absolute;
-    top: 45%;
     right: 70%;
-    width: 100%;
+    top: 45%;
     transition: all 0.4s ease;
+    width: 100%;
 }
 
 .hamburger-icon::before, .hamburger-icon::after {
@@ -325,11 +325,11 @@ form.contact-form {
 .menu .toggler {
     cursor: pointer;
     height: 100%;
-    opacity: 0;
     margin: 0;
+    opacity: 0;
     position: absolute;
-    top: 0;
     right: 70%;
+    top: 0;
     width: 100%;
     z-index: 2;
 }
@@ -355,11 +355,11 @@ form.contact-form {
 .header-nav {
     background: var(--html-bg-color);
     border-bottom: 1px solid var(--html-f-color);
-    font-family: 'Amatic SC', cursive;;
     color: var(--html-f-color);
+    font-family: 'Amatic SC', cursive;;
     height: var(--header-height);
-    position: fixed;
     left: 0;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 4;
@@ -389,12 +389,12 @@ form.contact-form {
 
 .header-routes {
     left: 0;
-    opacity: 0;
     margin: 0;
+    opacity: 0;
     padding: 0;
     position: absolute;
-    text-align: center;
     right: 0;
+    text-align: center;
     visibility: hidden;
 }
 
@@ -408,8 +408,8 @@ form.contact-form {
 
 .header-routes.showing {
     opacity: 1;
-    visibility: visible;
     transition: opacity .5s linear;
+    visibility: visible;
 }
 
 h4 {
@@ -440,8 +440,8 @@ h4 {
 
 .main-title {
     animation: translate 2s ease forwards;
-    font-size: 2.5em;
     font-family: 'Amatic SC', cursive;;
+    font-size: 2.5em;
     margin: 0;
     max-width: 700px;
     --x-translate: 0%;
@@ -449,31 +449,31 @@ h4 {
 }
 
 .mode-icon {
-    position: fixed;
     bottom: 1rem;
+    position: fixed;
     right: 1rem;
     z-index: 4;
 }
 
 .mode-switch {
-    position: relative;
     display: inline-block;
-    width: 60px;
     height: 34px;
+    position: relative;
+    width: 60px;
 }
 
-.mode-switch input { 
+.mode-switch input {
+    height: 0; 
     opacity: 0;
     width: 0;
-    height: 0;
 }
 
 .slider {
     background-color: rgb(43, 40, 40);
     bottom: 0;
-    position: absolute;
     cursor: pointer;
     left: 0;
+    position: absolute;
     right: 0;
     top: 0;
     transition: .4s;
@@ -499,23 +499,23 @@ h4 {
 }
   
 .input-dark-mode:checked + .slider:before {
-  transform: translateX(26px);
+    transform: translateX(26px);
 }
   
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .profilepic {
     animation: bounce 2s infinite;
     border-radius: 50%;
     display: block;
-    width: 35%;
     margin: 0 auto;
+    width: 35%;
 }
 
 .profilepic:hover {
@@ -524,17 +524,17 @@ h4 {
 }
 
 .projects-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .projects-container figure img {
     display: block;
-    object-fit: contain;
     max-width: 100%;
     margin: 0;
+    object-fit: contain;
 }
 
 .projects-container figure {
@@ -544,8 +544,8 @@ h4 {
 }
 
 .projects-container figure:hover .caption {
-   opacity: 1;
-   visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .project-title {
@@ -554,14 +554,14 @@ h4 {
 }
 
 .project-tool {
-   background-color: var(--html-f-color) ;
-   border-radius: .3em;
-   box-shadow: 0 0 5px 0 var(--html-f-color);
-   color: var(--html-bg-color);
-   display: inline-block;
-   margin: .3em;
-   margin-bottom: 0.1em;
-   padding: .3em;
+    background-color: var(--html-f-color) ;
+    border-radius: .3em;
+    box-shadow: 0 0 5px 0 var(--html-f-color);
+    color: var(--html-bg-color);
+    display: inline-block;
+    margin: .3em;
+    margin-bottom: 0.1em;
+    padding: .3em;
 }
 
 figure .caption {
@@ -569,14 +569,14 @@ figure .caption {
     box-sizing: border-box;
     font-size: 1.25rem;
     height: 100%;
-    opacity: 0;
     margin: 0;
+    max-width: 100%;
+    opacity: 0;
     overflow-y: auto;
     padding: 0 20px;
     position: absolute;
     top: 0;
     transition: all 0.45s ease-in-out;
-    max-width: 100%;
     visibility: hidden;
     z-index: 2;
 }
@@ -656,7 +656,7 @@ figure .caption {
 }
 
 .social-icons li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .small {
@@ -692,8 +692,8 @@ figure .caption {
 .title {
     border-bottom: 3px solid rebeccapurple;
     color: #24292e;
-    font-family: 'Shadows Into Light', cursive;    font-size: 3rem;
     display: inline-block;
+    font-family: 'Shadows Into Light', cursive;    font-size: 3rem;
     font-size: 2.5rem;
     margin: 2rem 0;
 }
@@ -711,8 +711,8 @@ figure .caption {
 .tech-container-item {
     height: 80px;
     margin: 1rem 2rem;
-    width: 20%;
     transition: all .2s ease-in;
+    width: 20%;
 }
 
 .tech-container-item p {
@@ -742,8 +742,8 @@ figure .caption {
     border-radius: 1.5rem;
     display: block;
     height: auto;
-    object-fit: contain;
     margin: 1rem auto;
+    object-fit: contain;
     width: 60%;
 }
 
@@ -800,9 +800,9 @@ figure .caption {
     }
 
     .tech-container-item {
+        font-size: 1rem;
         height: 100px;
         width: 10%;
-        font-size: 1rem;
     }
 
     .work-wrapper {
@@ -826,14 +826,14 @@ figure .caption {
 }
 
 @keyframes bounce {
-  0% { transform: translate3d(0px, 0px, 0);}
-  50% {transform: translate3d(0px, -8px, 0);}
-  100% {transform:translate3d(0px, 0px, 0);}
+    0% { transform: translate3d(0px, 0px, 0);}
+    50% {transform: translate3d(0px, -8px, 0);}
+    100% {transform:translate3d(0px, 0px, 0);}
 }
 
 @keyframes img-appears {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @keyframes animate {
@@ -846,5 +846,4 @@ figure .caption {
         opacity: 0;
         transform: translateY(-1000px) rotate(720deg);
     }
-
 }
