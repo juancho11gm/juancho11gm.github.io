@@ -1,5 +1,6 @@
 (() => {
   const btnNav = document.querySelector('.menu .toggler');
+  const hamburguerContainer = document.querySelector('.hamburger-container');
   const btnResume = document.querySelector('.btn.btn-resume');
   const btnSubmit = document.querySelector('.btn.btn-send');
   const sliderDarkMode = document.getElementById('dark-mode');

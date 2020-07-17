@@ -286,6 +286,7 @@ form.contact-form {
     box-sizing: border-box;
     height: 100%;
     position: absolute;
+    right: 70%;
     width: 100%;
 }
 
@@ -293,7 +294,6 @@ form.contact-form {
     background: var(--html-f-color);
     height: 4px;
     position: absolute;
-    right: 70%;
     top: 45%;
     transition: all 0.4s ease;
     width: 100%;
@@ -332,10 +332,6 @@ form.contact-form {
     top: 0;
     width: 100%;
     z-index: 2;
-}
-
-.menu .toggler:checked {
-    outline: none;
 }
 
 .menu {
