@@ -36,7 +36,13 @@
 
   function showNav() {
     let routes = document.querySelector('.header-routes');
-    routes.classList.contains('showing') ? routes.classList.remove('showing') : routes.classList.add('showing');
+    if(routes.classList.contains('showing')) {
+      routes.classList.remove('showing') 
+      btnNav.setAttribute('aria-expanded', false);
+      return;
+    }
+    routes.classList.add('showing');
+    btnNav.setAttribute('aria-expanded', true);
   }
 
   function validateForm(nameValue, emailValue, messageValue) {
