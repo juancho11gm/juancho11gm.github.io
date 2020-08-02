@@ -10,7 +10,6 @@
   const message = document.getElementById('message');
   const ANSWERS_URL = 'https://juansebastian-portfolio.herokuapp.com/contact';
   const ANSWERS_CLASS = 'answers-validation';
-  const CAPTCHA_CLASS = 'captcha-validation-error';
   const EMAIL_CLASS = 'email-validation-error';
   const FORM_CLASS = 'hide-form';
   const MESSAGE_CLASS = 'message-validation-error';
@@ -80,16 +79,6 @@
     });
   }
 
-  function validateCaptcha() {
-    let response = grecaptcha.getResponse();
-    if (!response.length) {
-      contactForm.classList.add(CAPTCHA_CLASS);
-      return false;
-    }
-    contactForm.classList.remove(CAPTCHA_CLASS)
-    return true;
-  }
-
   function sendForm(event) {
     event.preventDefault();
     const nameValue = name.value;
@@ -101,7 +90,6 @@
         emailValue,
         messageValue,
       };
-      if (!validateCaptcha()) return;
       if (!formSent) {
         btnSubmit.textContent = 'Sending...';
         saveAnswers(answers);
