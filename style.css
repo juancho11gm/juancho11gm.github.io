@@ -73,10 +73,6 @@ a:visited {
     padding: 0.3rem 2rem;
 }
 
-.btn.btn-contact:hover .right-arrow {
-   transform: translate(10px);
-}
-
 .btn.btn-contact {
     line-height: 35px;
     margin: 0;
@@ -580,15 +576,6 @@ figure .caption {
 .caption, .projects-container figure img {
     border-radius: 20px;
     box-shadow: 0 0 25px 0 rgba(38, 42, 97, 0.3);
-}
-
-.right-arrow {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    transition: all 500ms ease;
 }
 
 .section {
