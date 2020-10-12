@@ -14,7 +14,7 @@
   const FORM_CLASS = 'hide-form';
   const MESSAGE_CLASS = 'message-validation-error';
   const NAME_CLASS = 'name-validation-error';
-  const CV_URL = 'https://drive.google.com/file/d/1B4bwEcr84mx0Kx8pEESCaUlkXgHiLpG9/view?usp=sharing';
+  const CV_URL = 'https://drive.google.com/file/d/1inHHFdEUMQqsZuiBpE1hFgFjLgCOlFtS/view?usp=sharing';
   let formSent = false;
 
 
