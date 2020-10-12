@@ -791,8 +791,12 @@ figure .caption {
     }
 
     .work-wrapper {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work {
+        max-width: 400px;
     }
 }
 
