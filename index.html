@@ -2,10 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Juan Sebastián González website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Juan Sebastián's website"
+    />
+    <meta
+      name="og:description"
+      property="og:description"
+      content="Professional experience, projects and tech skills."
+    />
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Fog%3Aimage.jpg?alt=media&token=6b4a4219-400e-4848-a8af-f12b5c87375d"
+    />
+    <meta
+      property="og:url"
+      content="https://juancho11gm.github.io/portfolio/"
+    />
+    <meta name="twitter:title" content="Juan Sebastián's website" />
+    <meta
+      name="twitter:description"
+      content="Professional experience, projects and tech skills."
+    />
+    <meta
+      property="twitter:image"
+      content="https://firebasestorage.googleapis.com/v0/b/logintutorial-42e3e.appspot.com/o/portfolio%2Fog%3Aimage.jpg?alt=media&token=6b4a4219-400e-4848-a8af-f12b5c87375d"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +45,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" crossorigin src="/assets/index.954b5d7e.js"></script>
-    <link rel="stylesheet" href="/assets/index.6f7b89da.css">
+    <link rel="stylesheet" href="/assets/index.2564ca6e.css">
   </head>
   <body>
     <div id="root"></div>
