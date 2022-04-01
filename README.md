@@ -4,6 +4,9 @@
 
 ## Tech Stack
 
-- Platform: Node.js v16 LTS
-- Vite + React
-- Formatter: prettier
+- Platform: Node.js v16 LTS.
+- Vite + React.
+- Styling: Tailwindcss
+  - [headlessUI](https://headlessui.dev/)
+  - [heroicons](https://heroicons.com/)
+- Formatter: prettier.
