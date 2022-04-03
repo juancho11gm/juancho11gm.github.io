@@ -1,34 +1,7 @@
 import PropTypes from 'prop-types'; // ES6
-import { useEffect, useState } from 'react';
-import { fetchProjects } from '../../services/contentful/Contenful';
-
-function useProjects() {
-  const [data, setData] = useState([]);
-  const [status, setStatus] = useState('idle');
-
-  useEffect(() => {
-    setStatus('loading');
-    fetchProjects()
-      .then((data) => {
-        setData(data.projectCollection.items);
-        setStatus('success');
-      })
-      .catch(() => setStatus('error'));
-  }, []);
-
-  return {
-    status,
-    data,
-  };
-}
+import { projects } from '../../data/projects';
 
 function Projects() {
-  const { status, data: projects } = useProjects();
-
-  if (projects == null || status !== 'success') {
-    return <p>Loading...</p>;
-  }
-
   const projectsComponent = projects.map((project) => (
     <Project key={project.title} {...project} />
   ));
@@ -40,11 +13,11 @@ function Project({ title, description, tags, image, url }) {
   return (
     <a href={url} target="_blank" rel="noreferrer">
       <figure className="grid grid-cols-1 md:grid-cols-project shadow-lg rounded mb-16">
-        <div className="flex justify-center overflow-hidden bg-stone-100">
+        <div className="flex justify-center overflow-hidden bg-zinc-200	">
           <img
             src={image.url}
             alt={title}
-            className="max-w-xs sm:max-w-sm shadow-md"
+            className="max-w-xs sm:max-w-md shadow-md"
             loading="lazy"
           />
         </div>
