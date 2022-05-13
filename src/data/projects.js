@@ -10,6 +10,24 @@ export const projects = [
     url: 'https://github.com/juancho11gm/pokedux',
   },
   {
+    title: 'Star +',
+    description:
+      '🌟 Star+ is a VanillaJS project cloned from the original website.',
+    image: {
+      url: 'https://images.ctfassets.net/ncvuz9fkfgd0/3DJO8qSh7VEn6Aeip0fv15/a419ca753c3be131ea2d78a4bda03464/Screen_Shot_2022-05-13_at_1.25.39_PM.png?h=250',
+    },
+    tags: [
+      'Vite',
+      'VanillaJS',
+      'SCSS',
+      'Eslint',
+      'Prettier',
+      'Commitizen',
+      'Commitlint',
+    ],
+    url: 'https://github.com/juancho11gm/star-plus',
+  },
+  {
     title: 'Worki',
     description:
       'Mobile and web app focused on the management of recruitment processes in companies in the entertainment sector.',
