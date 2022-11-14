@@ -1,0 +1,49 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+const OverviewCard = () => {
+	return (
+		<section className='flex flex-col items-center content-between sm:flex-row my-4'>
+			<div className='w-40 h-40 rounded-full overflow-hidden relative flex items-center shrink-0'>
+				<Image
+					alt='Juan Gonzalez'
+					src='/assets/me/profilepic.jpg'
+					priority
+					className='hover:scale-110 transition-transform duration-700'
+					fill
+				/>
+			</div>
+			<div className='ml-0 sm:ml-8 md:ml-12'>
+				<h1 className='text-center font-bold text-3xl mt-4 sm:text-5xl sm:text-left'>
+					Juan González
+				</h1>
+				<Link
+					className='block text-center mb-2 text-gray-500 text-lg sm:text-left'
+					href='https://github.com/juancho11gm'
+					target='_blank'
+				>
+					@juancho11gm
+				</Link>
+				<p className='text-lg'>
+					<strong>Web Engineer</strong> at{' '}
+					<Link
+						className='text-purple-400'
+						href='https://www.hugeinc.com/'
+						target='_blank'
+					>
+						@hugeinc
+					</Link>
+					.
+				</p>
+				<p className='mt-2 text-lg sm:mt-6'>
+					JavaScript, React and NextJS enthusiast.
+				</p>
+				<p className='text-gray-500 text-lg'>
+					Learning everyday about tech, personal growth and finance.
+				</p>
+			</div>
+		</section>
+	);
+};
+
+export { OverviewCard };

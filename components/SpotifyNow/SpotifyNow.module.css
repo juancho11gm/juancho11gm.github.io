@@ -1,0 +1,59 @@
+.bar {
+	margin-right: 1px;
+	width: 10px;
+	height: 1px;
+	overflow: hidden;
+	@apply bg-green-600;
+	color: transparent;
+	animation-name: pulse;
+	animation-duration: 1.4s;
+	animation-iteration-count: infinite;
+}
+
+.bar1 {
+	animation-delay: 0.5s;
+}
+
+.bar2 {
+	animation-delay: 0.2s;
+}
+
+.bar3 {
+	animation-delay: 0.7s;
+}
+
+.bar4 {
+	animation-delay: 1.2s;
+}
+
+@keyframes pulse {
+	0% {
+		height: 1px;
+		margin-top: 0;
+	}
+
+	10% {
+		height: 40px;
+		margin-top: -40px;
+	}
+
+	50% {
+		height: 20px;
+		margin-top: -20px;
+	}
+
+	60% {
+		height: 30px;
+		margin-top: -30px;
+	}
+
+	80% {
+		height: 60px;
+		margin-top: -60px;
+	}
+
+	100% {
+		height: 1px;
+		margin-top: 0;
+	}
+}

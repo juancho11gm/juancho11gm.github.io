@@ -1,25 +1,28 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js,jsx}'],
-  theme: {
-    extend: {
-      colors: {
-        primary: '#f1f5f9',
-      },
-      fontSize: {
-        lg: '54px',
-        md: '26px',
-      },
-      backgroundPosition: {
-        mid: '60% 90%',
-      },
-      backgroundImage: {
-        'hero-pattern':
-          "linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .5)), url('../assets/hero.jpg')",
-      },
-      gridTemplateColumns: {
-        project: '6fr 4fr',
-      },
-    },
-  },
-  plugins: [],
+	content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+	darkMode: 'class',
+	screens: {
+		sm: '640px',
+		// => @media (min-width: 640px) { ... }
+
+		md: '768px',
+		// => @media (min-width: 768px) { ... }
+
+		lg: '1024px',
+		// => @media (min-width: 1024px) { ... }
+
+		xl: '1280px',
+		// => @media (min-width: 1280px) { ... }
+
+		'2xl': '1536px',
+		// => @media (min-width: 1536px) { ... }
+	},
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: ['inter', 'Inter'],
+			},
+		},
+	},
 };
