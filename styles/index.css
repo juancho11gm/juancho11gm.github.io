@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+  Tailwind customizing colors: https://tailwindcss.com/docs/customizing-colors
+**/
+
+html body {
+	@apply bg-gray-50;
+}
+
+html.dark body {
+	@apply bg-gray-900;
+}

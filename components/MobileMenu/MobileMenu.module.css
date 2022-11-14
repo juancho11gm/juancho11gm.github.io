@@ -1,0 +1,37 @@
+.menuButton {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	position: relative;
+}
+
+.menuButton svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(1);
+	opacity: 1;
+	transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.menuButton svg[data-hide='true'] {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.star {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.text {
+	transition: transform 0.2s;
+}
+
+.link:hover .text {
+	transform: translateX(4px);
+}
+
+.link:hover .star {
+	opacity: 1;
+}
