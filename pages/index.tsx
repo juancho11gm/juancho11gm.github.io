@@ -1,13 +1,14 @@
 import Head from 'next/head';
-import { Layout } from '@components/Layout/Layout';
-import { Container } from '@components/Container/Container';
+import Link from 'next/link';
 import { OverviewCard } from '@components/OverviewCard/OverviewCard';
-import { WEBSITE_TITLE } from '../lib/constants';
-import Intro from '@components/intro';
-import Post from '../interfaces/post';
-import HeroPost from '@components/hero-post';
+import { Container } from '@components/Container/Container';
+import { Layout } from '@components/Layout/Layout';
 import MoreStories from '@components/more-stories';
+import HeroPost from '@components/hero-post';
+import Intro from '@components/intro';
 import { getAllPosts } from 'lib/api';
+import Post from '@interfaces/post';
+import { WEBSITE_TITLE } from '../lib/constants';
 
 type Props = {
 	allPosts: Post[];
@@ -25,6 +26,9 @@ export default function Index({ allPosts }: Props) {
 				</Head>
 				<Container>
 					<OverviewCard />
+					<Link href='/about' className='underline'>
+						Read about me.
+					</Link>
 					<Intro />
 					{heroPost && (
 						<HeroPost

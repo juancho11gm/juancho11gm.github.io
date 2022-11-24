@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { HamburgerMenu } from '@components/Icons/HamburgerMenu/HamburgerMenu';
 import { Close } from '@components/Icons/Close/Close';
@@ -44,8 +44,20 @@ const MobileMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	function toggleMenu() {
-		setIsOpen(!isOpen);
+		if (isOpen) {
+			setIsOpen(false);
+			document.body.style.overflow = '';
+		} else {
+			setIsOpen(true);
+			document.body.style.overflow = 'hidden';
+		}
 	}
+
+	useEffect(() => {
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	return (
 		<>
