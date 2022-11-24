@@ -1,0 +1,30 @@
+.experienceCard {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+}
+
+.project {
+	position: relative;
+}
+
+.project::before {
+	content: '';
+	@apply bg-gray-400;
+	position: absolute;
+	left: 1rem;
+	height: 80%;
+	top: 2rem;
+	width: 1px;
+}
+
+.project::after {
+	border-radius: 50%;
+	content: '';
+	@apply bg-gray-400;
+	position: absolute;
+	left: 1rem;
+	transform: translateX(-50%);
+	top: 0.4rem;
+	height: 0.8rem;
+	width: 0.8rem;
+}

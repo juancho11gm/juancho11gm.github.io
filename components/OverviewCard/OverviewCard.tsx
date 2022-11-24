@@ -9,8 +9,9 @@ const OverviewCard = () => {
 					alt='Juan Gonzalez'
 					src='/assets/me/profilepic.jpg'
 					priority
-					className='hover:scale-110 transition-transform duration-700'
+					className='hover:scale-105 transition-transform duration-700'
 					fill
+					sizes='100%'
 				/>
 			</div>
 			<div className='ml-0 sm:ml-8 md:ml-12'>
@@ -31,11 +32,11 @@ const OverviewCard = () => {
 						href='https://www.hugeinc.com/'
 						target='_blank'
 					>
-						@hugeinc
+						HugeInc
 					</Link>
 					.
 				</p>
-				<p className='mt-2 text-lg sm:mt-6'>
+				<p className='mt-4 text-lg sm:mt-6'>
 					JavaScript, React and NextJS enthusiast.
 				</p>
 				<p className='text-gray-500 text-lg'>

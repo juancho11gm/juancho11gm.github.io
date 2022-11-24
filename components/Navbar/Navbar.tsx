@@ -1,11 +1,9 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 import { Container } from '@components/Container/Container';
 import { MobileMenu } from '@components/MobileMenu/MobileMenu';
 import { ThemeToggle } from '@components/Icons/ThemeToggle/ThemeToggle';
-import { Theme } from '@interfaces/theme';
 
 const NavLink = ({ href, text }) => {
 	const router = useRouter();
@@ -25,11 +23,6 @@ const NavLink = ({ href, text }) => {
 };
 
 const Navbar = () => {
-	const { theme, setTheme } = useTheme();
-
-	const onClickHandler = () =>
-		setTheme(theme === Theme.Dark ? Theme.Light : Theme.Dark);
-
 	return (
 		<Container>
 			<header className='relative flex justify-between items-center pt-8'>
@@ -40,7 +33,7 @@ const Navbar = () => {
 					<NavLink href='/blog' text='Blog' />
 					<MobileMenu />
 				</nav>
-				<ThemeToggle onClickHandler={onClickHandler}></ThemeToggle>
+				<ThemeToggle></ThemeToggle>
 			</header>
 		</Container>
 	);
