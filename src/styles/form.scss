@@ -1,0 +1,95 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: start;
+  width: 90%;
+
+  &.hide-form {
+    display: none;
+  }
+
+  &__label {
+    color: var(--html-f-color);
+    margin-bottom: 18px;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 1rem;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 12px;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border-color: purple;
+    border-width: 2px;
+  }
+
+  &__textarea {
+    border-radius: 1rem;
+    max-width: 95%;
+    outline: none;
+    padding: 1.5rem;
+    resize: none;
+  }
+}
+
+.contact-info {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-validation-error .name-error,
+.email-validation-error .email-error,
+.message-validation-error .message-error {
+  color: red;
+  display: block;
+}
+
+.name-error,
+.email-error,
+.message-error {
+  display: none;
+  margin-top: 0;
+}
+
+.answers-saved {
+  display: none;
+  text-align: center;
+}
+
+.answers-validation + .answers-saved {
+  display: block;
+}
+
+.side-icon-box {
+  display: flex;
+}
+
+.side-icon-box a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.side-icon i {
+  font-size: 2rem;
+  height: 50px;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.side-icon-box .email {
+  font-size: 0.8rem;
+}
+
+.side-icon-boxes {
+  margin: 2rem 0 0 0;
+  max-width: 95%;
+}

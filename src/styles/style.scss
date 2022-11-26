@@ -1,0 +1,112 @@
+@import './variables';
+@import './circles.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './hero.scss';
+@import './buttons.scss';
+@import './animations.scss';
+@import './form.scss';
+@import './aboutme.scss';
+@import './article.scss';
+@import './projects.scss';
+
+:root {
+  --circles-color: #27326d;
+  --f-color: #eceeef;
+  --html--light-color: #f6f7ff;
+  --html-bg-color: #ffffff;
+  --html-f-color: #24292e;
+  --html-font-size: 1rem;
+  --light-bg: #ffffff;
+  scroll-behavior: smooth;
+  scroll-padding-top: var($header-height);
+}
+
+body,
+html {
+  background-image: linear-gradient(
+    -45deg,
+    var(--html-bg-color),
+    var(--html--light-color)
+  );
+  color: var(--f-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.main-content {
+  color: var(--html-f-color);
+  text-align: center;
+}
+
+.main-content,
+.article,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  &--work {
+    .article {
+      margin: 2rem;
+    }
+  }
+
+  &__title {
+    border-bottom: 3px solid rebeccapurple;
+    color: #24292e;
+    display: inline-block;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  &__description {
+    margin: 0 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn.btn-resume {
+    margin: 0;
+  }
+
+  .btn.btn-send {
+    margin: auto;
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .article {
+    &__description {
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  .article {
+    &--aboutme {
+      display: flex;
+    }
+
+    &-form {
+      width: 60%;
+    }
+  }
+
+  .article--tech {
+    padding: 1.5rem 0;
+  }
+
+  .section--work {
+    display: flex;
+    justify-content: center;
+  }
+}

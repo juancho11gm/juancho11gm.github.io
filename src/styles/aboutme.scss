@@ -1,0 +1,12 @@
+.profilepic {
+  animation: bounce 2s infinite;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+}
+
+.profilepic:hover {
+  box-shadow: rgba(15, 31, 87, 10) 0 0 15px;
+  transform: scale(1.05);
+}

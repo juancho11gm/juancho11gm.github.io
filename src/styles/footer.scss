@@ -1,0 +1,51 @@
+.footer {
+  color: var(--html-f-color);
+  padding: 1.5rem;
+  text-align: center;
+
+  &__description {
+    margin: 0;
+  }
+
+  .icons {
+    &__item {
+      display: inline-block;
+    }
+
+    &__link {
+      border-radius: 100%;
+      color: #747a80;
+      display: inline-block;
+      height: 60px;
+      line-height: 74px;
+      transition: all 0.2s linear;
+      width: 60px;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: #fff;
+        background-color: #29aafe;
+      }
+
+      &-github:hover {
+        background-color: #24292e;
+      }
+
+      &-linkedin:hover {
+        background-color: #007bb6;
+      }
+    }
+
+    &__i {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .fa.fa-github,
+  .fa.fa-linkedin {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
