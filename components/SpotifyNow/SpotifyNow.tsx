@@ -24,6 +24,12 @@ const Bars = () => {
 };
 
 const SpotifyNow = () => {
+	/**
+	 * First, immediately show the page without data.
+	 * Then, fetch the data on the client side and display it when ready.
+	 * SEO is not relevant and the page doesn’t need to be pre-rendered.
+	 * The data is frequently updated, which requires request-time data fetching.
+	 */
 	const { data, error } = useSWR<NowPlayingSong>('/api/spotify-now', fetcher);
 
 	const showSpotify = error !== '' && data?.isPlaying;

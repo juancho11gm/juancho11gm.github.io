@@ -1,6 +1,12 @@
+import useSWR from 'swr';
 import { ExperienceCard } from '@components/ExperienceCard/ExperienceCard';
+import { Company } from '@interfaces/experience';
+import { fetcher } from '@lib/fetcher';
 
 const AboutCard = () => {
+	const { data, error } = useSWR<Company[]>('/api/experience', fetcher);
+
+	if (error || !data) return;
 	return (
 		<section className='mb-32'>
 			<p>
@@ -14,9 +20,26 @@ const AboutCard = () => {
 			</p>
 			<h2 className='font-bold text-2xl mt-6 mb-4 sm:text-3xl '>Career Path</h2>
 			<ul>
-				<li>
-					<ExperienceCard />
-				</li>
+				{data.map(
+					(
+						{ name, type, startDate, endDate, iconUrl, href, projects },
+						index
+					) => {
+						return (
+							<li key={`${name}-${index}`}>
+								<ExperienceCard
+									name={name}
+									type={type}
+									startDate={startDate}
+									endDate={endDate}
+									iconUrl={iconUrl}
+									href={href}
+									projects={projects}
+								/>
+							</li>
+						);
+					}
+				)}
 			</ul>
 		</section>
 	);

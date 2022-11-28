@@ -13,7 +13,7 @@ const Footer = () => {
 					<Link href='/about'>About</Link>
 					<Link href='/books'>Books</Link>
 					<Link href='/blog'>Blog</Link>
-					<Link href='/'>GitHub</Link>
+					<Link href='https://github.com/juancho11gm'>GitHub</Link>
 				</div>
 			</Container>
 		</footer>

@@ -1,16 +1,16 @@
-import PostPreview from './post-preview';
-import type Post from '../interfaces/post';
 import Link from 'next/link';
+import { PostPreview } from '@components/PostPreview/PostPreview';
+import { PostType } from '@interfaces/post';
 
 type Props = {
-	posts: Post[];
+	posts: PostType[];
 };
 
-const MoreStories = ({ posts }: Props) => {
+const MorePosts = ({ posts }: Props) => {
 	return (
 		<section>
 			<h2 className='mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight'>
-				More Stories
+				More Posts
 			</h2>
 			<div className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32'>
 				{posts.map((post) => (
@@ -24,10 +24,12 @@ const MoreStories = ({ posts }: Props) => {
 						excerpt={post.excerpt}
 					/>
 				))}
-				<Link href='/blog'>Read more articles</Link>
+				<Link className='col-start-1' href='/blog'>
+					Read more articles
+				</Link>
 			</div>
 		</section>
 	);
 };
 
-export default MoreStories;
+export { MorePosts };

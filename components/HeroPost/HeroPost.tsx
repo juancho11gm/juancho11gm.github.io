@@ -1,8 +1,8 @@
-import Avatar from './avatar';
-import DateFormatter from './date-formatter';
-import { CoverImage } from '@components/CoverImage/CoverImage';
 import Link from 'next/link';
-import type Author from '../interfaces/author';
+import { DateFormatter } from '@components/DateFormatter/DateFormatter';
+import { CoverImage } from '@components/CoverImage/CoverImage';
+import { Avatar } from '@components/Avatar/avatar';
+import { Author } from '@interfaces/author';
 
 type Props = {
 	title: string;
@@ -50,4 +50,4 @@ const HeroPost = ({
 	);
 };
 
-export default HeroPost;
+export { HeroPost };

@@ -20,7 +20,8 @@
 			"@pages/*": ["pages/*"],
 			"@hooks/*": ["hooks/*"],
 			"@styles/*": ["styles/*"],
-			"@interfaces/*": ["interfaces/*"]
+			"@interfaces/*": ["interfaces/*"],
+			"@lib/*": ["lib/*"]
 		}
 	},
 	"exclude": ["node_modules"],

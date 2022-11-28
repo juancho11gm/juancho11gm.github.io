@@ -4,11 +4,19 @@ import matter from 'gray-matter'
 
 const postsDirectory = join(process.cwd(), '_posts')
 
+/**
+ * Returns the posts file names inside _posts.
+ */
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
 }
 
+/**
+ * Matter will decompose the post into data and content.
+ */
 export function getPostBySlug(slug: string, fields: string[] = []) {
+  // Need to remove the extension since the 
+  // slugs won't have it e.g /my-post.
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -31,10 +39,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 }
 
 export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs()
+  const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+  return posts;
 }

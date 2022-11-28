@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const OverviewCard = () => {
 	return (
-		<section className='flex flex-col items-center content-between sm:flex-row my-4'>
+		<section className='flex flex-col items-center sm:flex-row my-4'>
 			<div className='w-40 h-40 rounded-full overflow-hidden relative flex items-center shrink-0'>
 				<Image
 					alt='Juan Gonzalez'
@@ -14,7 +14,7 @@ const OverviewCard = () => {
 					sizes='100%'
 				/>
 			</div>
-			<div className='ml-0 sm:ml-8 md:ml-12'>
+			<div className='self-start ml-0 sm:ml-8 md:ml-12'>
 				<h1 className='text-center font-bold text-3xl mt-4 sm:text-5xl sm:text-left'>
 					Juan González
 				</h1>

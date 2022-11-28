@@ -1,5 +1,5 @@
 export type ProjectExperience = {
-  title: string;
+  name: string;
   description: string;
   tags: string[];
   iconUrl: string;

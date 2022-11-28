@@ -1,6 +1,6 @@
-import { Footer } from '../Footer/Footer';
-import Meta from '../meta';
-import Navbar from '../Navbar/Navbar';
+import { Footer } from '@components/Footer/Footer';
+import { Meta } from '@components/Meta/Meta';
+import { Navbar } from '@components/Navbar/Navbar';
 
 type Props = {
 	children: React.ReactNode;
