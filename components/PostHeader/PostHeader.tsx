@@ -1,8 +1,8 @@
-import Avatar from './avatar';
-import DateFormatter from './date-formatter';
-import { CoverImage } from './CoverImage/CoverImage';
-import PostTitle from './post-title';
-import type Author from '../interfaces/author';
+import { DateFormatter } from '@components/DateFormatter/DateFormatter';
+import { CoverImage } from '@components/CoverImage/CoverImage';
+import { PostTitle } from '@components/PostTitle/PostTitle';
+import { Avatar } from '@components/Avatar/avatar';
+import { Author } from '@interfaces/author';
 
 type Props = {
 	title: string;
@@ -33,4 +33,4 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
 	);
 };
 
-export default PostHeader;
+export { PostHeader };

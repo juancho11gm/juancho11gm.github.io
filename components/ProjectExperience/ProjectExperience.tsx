@@ -4,7 +4,7 @@ import styles from './ProjectExperience.module.css';
 import Image from 'next/image';
 
 const ProjectExperience = ({
-	title = '',
+	name = '',
 	description = '',
 	iconUrl,
 	tags = [],
@@ -31,7 +31,7 @@ const ProjectExperience = ({
 					sizes='100%'
 				/>
 			</span>
-			<h4 className='font-bold'>{title}</h4>
+			<h4 className='font-bold'>{name}</h4>
 			<p className='mb-2'>{description}</p>
 			<ul className='flex flex-wrap gap-2 sm:gap-4'>{tagList}</ul>
 		</div>

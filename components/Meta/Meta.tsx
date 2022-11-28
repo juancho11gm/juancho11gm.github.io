@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { HOME_OG_IMAGE_URL } from '../lib/constants';
 
 const Meta = () => {
 	return (
@@ -34,11 +33,11 @@ const Meta = () => {
 			<link rel='alternate' type='application/rss+xml' href='/feed.xml' />
 			<meta
 				name='description'
-				content='Here you will find suggested books and articles suggested by Juan Gonzalez.'
+				content='Here you will find books and articles suggested by Juan Gonzalez.'
 			/>
-			<meta property='og:image' content={HOME_OG_IMAGE_URL} />
+			<meta property='og:image' content='/assets/me/profilepic.jpg' />
 		</Head>
 	);
 };
 
-export default Meta;
+export { Meta };

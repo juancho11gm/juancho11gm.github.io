@@ -1,17 +1,17 @@
-import { Container } from '@components/Container/Container';
-import { Layout } from '@components/Layout/Layout';
-import MoreStories from '../components/more-stories';
-import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
-import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
-import Post from '../interfaces/post';
+import { Container } from '@components/Container/Container';
+import { HeroPost } from '@components/HeroPost/HeroPost';
+import { Layout } from '@components/Layout/Layout';
+import { MorePosts } from '@components/MorePosts/MorePosts';
+import { getAllPosts } from '@lib/api';
+import { PostType } from '@interfaces/post';
+import { Intro } from '@components/Intro/Intro';
 
 type Props = {
-	allPosts: Post[];
+	allPosts: PostType[];
 };
 
-export default function Index({ allPosts }: Props) {
+export default function Blog({ allPosts }: Props) {
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1);
 	return (
@@ -32,7 +32,7 @@ export default function Index({ allPosts }: Props) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+					{morePosts.length > 0 && <MorePosts posts={morePosts} />}
 				</Container>
 			</Layout>
 		</>

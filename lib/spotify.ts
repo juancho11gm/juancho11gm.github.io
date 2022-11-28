@@ -3,6 +3,7 @@
  */
 
 const CURRENTLY_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
+const RECENTLY_PLAYED_TRACKS = 'https://api.spotify.com/v1/me/player/recently-played';
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const client_id = process.env.SPOTIFY_CLIENT_ID;
@@ -25,6 +26,8 @@ async function getAccessToken() {
       Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded'
     },
+    // Follow https://khalilstemmler.com/articles/tutorials/getting-the-currently-playing-song-spotify/
+    // for getting the refresh token
     body: new URLSearchParams({
       grant_type: 'refresh_token',
       refresh_token
@@ -52,4 +55,18 @@ async function getPlayingSong() {
   });
 }
 
-export { getPlayingSong }
+async function getRecentlyPlayedSongs() {
+  const {
+    access_token,
+    // refresh_token 
+  } = await getAccessToken();
+
+  return fetch(RECENTLY_PLAYED_TRACKS, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+      'Content-Type': 'application/json'
+    }
+  });
+}
+
+export { getPlayingSong, getRecentlyPlayedSongs }

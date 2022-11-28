@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import DateFormatter from './date-formatter';
+import { DateFormatter } from '@components/DateFormatter/DateFormatter';
 import { CoverImage } from '@components/CoverImage/CoverImage';
-import type Author from '../interfaces/author';
-import Avatar from './avatar';
+import { Avatar } from '@components/Avatar/avatar';
+import { Author } from '@interfaces/author';
 
 type Props = {
 	title: string;
@@ -44,4 +44,4 @@ const PostPreview = ({
 	);
 };
 
-export default PostPreview;
+export { PostPreview };

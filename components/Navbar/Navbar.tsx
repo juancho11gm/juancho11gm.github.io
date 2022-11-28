@@ -1,5 +1,5 @@
-import classNames from 'classnames';
 import Link from 'next/link';
+import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { Container } from '@components/Container/Container';
 import { MobileMenu } from '@components/MobileMenu/MobileMenu';
@@ -39,4 +39,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export { Navbar };
