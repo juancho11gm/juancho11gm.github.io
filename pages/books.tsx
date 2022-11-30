@@ -1,6 +1,7 @@
+import Head from 'next/head';
 import { Container } from '@components/Container/Container';
 import { Layout } from '@components/Layout/Layout';
-import Head from 'next/head';
+import { BooksGrid } from '@components/BooksGrid/BooksGrid';
 
 export default function About() {
 	return (
@@ -10,20 +11,7 @@ export default function About() {
 					<title>Books | Juan González</title>
 				</Head>
 				<Container>
-					{/* TODO: crete a custom component */}
-
-					<div className='grid grid'>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-						<div className='bg-neutral-500 border-black border-2 my-2 mx-2 w-52 h-52'></div>
-					</div>
+					<BooksGrid />
 				</Container>
 			</Layout>
 		</>
