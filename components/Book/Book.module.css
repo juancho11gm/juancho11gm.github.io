@@ -1,0 +1,42 @@
+.imageContainer {
+	flex-grow: 2;
+	width: 100%;
+}
+
+.bookButton {
+	@apply bg-purple-700;
+	@apply text-white;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	border: none;
+	padding: 0.4rem 0.2rem;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+/* .bookButton::before {
+	content: '';
+	background: linear-gradient(
+		45deg,
+		red,
+		blue,
+		deeppink,
+		blue,
+		red,
+		blue,
+		deeppink,
+		blue
+	);
+	background-size: 800%;
+	border-radius: 1rem;
+	filter: blur(8px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+ */

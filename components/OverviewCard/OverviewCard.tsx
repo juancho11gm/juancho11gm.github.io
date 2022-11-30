@@ -1,10 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import classNames from 'classnames';
+import styles from './OverviewCard.module.css';
 
 const OverviewCard = () => {
 	return (
 		<section className='flex flex-col items-center sm:flex-row my-4'>
-			<div className='w-40 h-40 rounded-full overflow-hidden relative flex items-center shrink-0'>
+			<div
+				className={classNames(
+					styles.image,
+					'rounded-full overflow-hidden relative flex items-center shrink-0'
+				)}
+			>
 				<Image
 					alt='Juan Gonzalez'
 					src='/assets/me/profilepic.jpg'
