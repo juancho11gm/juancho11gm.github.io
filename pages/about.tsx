@@ -14,6 +14,7 @@ export default function About() {
 				<Container>
 					<OverviewCard />
 					<AboutCard />
+					{/* TODO: Add interests... */}
 				</Container>
 			</Layout>
 		</>
