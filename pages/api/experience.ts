@@ -3,37 +3,40 @@ export default function handler(req, res) {
     {
       name: 'HugeInc',
       type: 'Full-time - Remote',
-      startDate: '24/08/2020',
-      iconUrl: '/assets/logos/huge.jpeg',
+      startDate: 'Aug/2020',
+      iconUrl: '/assets/logos/huge.jpg',
       href: 'https://www.hugeinc.com',
       projects: [
         {
           name: 'Stellantis 🏎',
+          role: 'Web Engineer',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam voluptatum nisi enim! Blanditiis reiciendis accusantium provident, veniam quasi impedit tempora reprehenderit enim incidunt quisquam similique vel, excepturi molestiae officia?',
+            `Business and technical development of advertising units for the major automotive brands in the Stellantis' projects.`,
           iconUrl: '/assets/logos/stellantis.png',
           tags: ['JavaScript', 'React', 'GSAP', 'SCSS', 'Jest', 'Puppeteer'],
         },
         {
           name: 'Virgin Voyages 🛳',
+          role: 'Web Engineer',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam voluptatum nisi enim! Blanditiis reiciendis accusantium provident, veniam quasi impedit tempora reprehenderit enim incidunt quisquam similique vel, excepturi molestiae officia?',
+            'Frontend development for the Virgin Voyages content management system.',
           iconUrl: '/assets/logos/virgin-voyages.png',
-          tags: ['TypeScript', 'SCSS'],
+          tags: ['TypeScript', 'SCSS', 'Magnolia'],
         },
       ],
     },
     {
       name: 'PushDev',
       type: 'Part-time - Remote',
-      startDate: '01/11/2019',
+      startDate: 'Nov/2019',
       iconUrl: '/assets/logos/pushdev.jpg',
-      href: 'https://www.hugeinc.com',
+      href: 'https://github.com/pushdev-code',
       projects: [
         {
           name: 'Web development Bootcamps',
+          role: 'Co-founder and Web Engineer',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam voluptatum nisi enim! Blanditiis reiciendis accusantium provident, veniam quasi impedit tempora reprehenderit enim incidunt quisquam similique vel, excepturi molestiae officia?',
+            'Directed Full Stack web development classes using tools such as GIT, HTML, CSS and JavaScript.',
           iconUrl: '/assets/logos/pushdev-bootcamps.jpg',
           tags: ['HTML', 'CSS', 'GIT', 'JavaScript', 'React'],
         },
@@ -42,17 +45,26 @@ export default function handler(req, res) {
     {
       name: 'Pontificia Universidad Javeriana',
       type: 'Part-time - On-site',
-      startDate: '01/02/2017',
-      endDate: '01/07/2019',
+      startDate: 'Jan/2017',
+      endDate: 'Nov/2019',
       iconUrl: '/assets/logos/javeriana.png',
-      href: 'https://www.hugeinc.com',
+      href: 'https://www.javeriana.edu.co/inicio',
       projects: [
         {
           name: 'Basic algorithms and Object Oriented Programming',
+          role: 'Teacher Assistant',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam voluptatum nisi enim! Blanditiis reiciendis accusantium provident, veniam quasi impedit tempora reprehenderit enim incidunt quisquam similique vel, excepturi molestiae officia?',
+            'Drive students to the best practices in basic algorithms and object-oriented programming classes (C++, Java) by giving classes and giving valuable feedback.',
           iconUrl: '/assets/logos/code.jpg',
-          tags: ['HTML', 'CSS', 'GIT', 'JavaScript', 'React'],
+          tags: ['C++', 'Java'],
+        },
+        {
+          name: 'Red Somos',
+          role: 'Engineer Intern',
+          description:
+            'Develop and implement new documentation to manage the indicators of the strategic plan.',
+          iconUrl: '/assets/logos/red-somos.jpeg',
+          tags: ['Google Sheets', 'Visual Basic'],
         },
       ],
     },

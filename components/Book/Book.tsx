@@ -26,9 +26,9 @@ const Book = ({
 				<p className='my-2 md:my-4 shrink-0 w-full'>{description}</p>
 			</figcaption>
 			<ul className='flex flex-wrap p-0 gap-2 w-full'>
-				{tags.map((tag) => {
+				{tags.map((tag, index) => {
 					return (
-						<li>
+						<li key={`${tag}-${index}`}>
 							<span className='border-2 p-2 rounded-lg flex'>{tag}</span>
 						</li>
 					);
