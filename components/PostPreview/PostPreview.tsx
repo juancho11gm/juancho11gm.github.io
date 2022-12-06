@@ -39,7 +39,10 @@ const PostPreview = ({
 				<DateFormatter dateString={date} />
 			</div>
 			<p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
-			<Avatar name={author.name} picture={author.picture} />
+			<div className='flex items-center'>
+				<Avatar name={author.name} picture={author.picture} />
+				<div className='font-bold'>{author.name}</div>
+			</div>
 		</div>
 	);
 };

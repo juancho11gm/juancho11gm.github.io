@@ -2,21 +2,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { OverviewCard } from '@components/OverviewCard/OverviewCard';
 import { Container } from '@components/Container/Container';
-import { HeroPost } from '@components/HeroPost/HeroPost';
 import { Layout } from '@components/Layout/Layout';
-import { MorePosts } from '@components/MorePosts/MorePosts';
 import { Intro } from '@components/Intro/Intro';
+import { Blog, BlogProps } from '@components/Blog/Blog';
 import { getAllPosts } from '@lib/api';
-import { PostType } from '@interfaces/post';
 
-type Props = {
-	allPosts: PostType[];
-};
-
-export default function Index({ allPosts }: Props) {
-	const [heroPost] = allPosts;
-	const morePosts = allPosts.slice(1, 3);
-
+export default function Index({ allPosts }: BlogProps) {
 	return (
 		<>
 			<Layout>
@@ -29,17 +20,10 @@ export default function Index({ allPosts }: Props) {
 						Read about me.
 					</Link>
 					<Intro />
-					{heroPost && (
-						<HeroPost
-							title={heroPost.title}
-							coverImage={heroPost.coverImage}
-							date={heroPost.date}
-							author={heroPost.author}
-							slug={heroPost.slug}
-							excerpt={heroPost.excerpt}
-						/>
-					)}
-					{morePosts.length > 0 && <MorePosts posts={morePosts} />}
+					<Blog allPosts={allPosts} offset={3} />
+					<Link className='block my-6 text-purple-400' href='/blog'>
+						Read more articles
+					</Link>
 				</Container>
 			</Layout>
 		</>

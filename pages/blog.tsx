@@ -1,19 +1,16 @@
 import Head from 'next/head';
 import { Container } from '@components/Container/Container';
-import { HeroPost } from '@components/HeroPost/HeroPost';
 import { Layout } from '@components/Layout/Layout';
-import { MorePosts } from '@components/MorePosts/MorePosts';
-import { getAllPosts } from '@lib/api';
-import { PostType } from '@interfaces/post';
 import { Intro } from '@components/Intro/Intro';
+import { Blog } from '@components/Blog/Blog';
+import { PostType } from '@interfaces/post';
+import { getAllPosts } from '@lib/api';
 
 type Props = {
 	allPosts: PostType[];
 };
 
-export default function Blog({ allPosts }: Props) {
-	const heroPost = allPosts[0];
-	const morePosts = allPosts.slice(1);
+export default function BlogaPage({ allPosts }: Props) {
 	return (
 		<>
 			<Layout>
@@ -22,17 +19,7 @@ export default function Blog({ allPosts }: Props) {
 				</Head>
 				<Container>
 					<Intro />
-					{heroPost && (
-						<HeroPost
-							title={heroPost.title}
-							coverImage={heroPost.coverImage}
-							date={heroPost.date}
-							author={heroPost.author}
-							slug={heroPost.slug}
-							excerpt={heroPost.excerpt}
-						/>
-					)}
-					{morePosts.length > 0 && <MorePosts posts={morePosts} />}
+					<Blog allPosts={allPosts} />
 				</Container>
 			</Layout>
 		</>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 const ProjectExperience = ({
 	name = '',
+	role = '',
 	description = '',
 	iconUrl,
 	tags = [],
@@ -12,7 +13,7 @@ const ProjectExperience = ({
 	const tagList = tags.map((tag) => (
 		<li
 			key={tag}
-			className='bg-gray-200 rounded-md p-2 text-gray-500 dark:text-gray-200 dark:bg-gray-500'
+			className='bg-gray-200 rounded-md p-1 text-gray-500 dark:text-gray-200 dark:bg-gray-500'
 		>
 			{tag}
 		</li>
@@ -32,7 +33,8 @@ const ProjectExperience = ({
 				/>
 			</span>
 			<h4 className='font-bold'>{name}</h4>
-			<p className='mb-2'>{description}</p>
+			<h5 className='text-gray-500'>{role}</h5>
+			<p className='mb-2 mt-2'>{description}</p>
 			<ul className='flex flex-wrap gap-2 sm:gap-4'>{tagList}</ul>
 		</div>
 	);
