@@ -5,9 +5,10 @@ type Props = {
 	title: string;
 	src: string;
 	slug?: string;
+	className?: string;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, className }: Props) => {
 	const image = (
 		<img
 			src={src}
@@ -18,7 +19,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
 		/>
 	);
 	return (
-		<div className='m-auto max-w-lg flex justify-center'>
+		<div className={classnames('max-w-lg flex', className)}>
 			{slug ? (
 				<Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
 					{image}

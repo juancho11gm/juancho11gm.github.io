@@ -1,9 +1,10 @@
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactMarkdown from 'react-markdown';
+import { ReactNode } from 'react';
 
 type CodeBlockProps = {
-	children: string;
+	children: ReactNode & ReactNode[];
 	className: string;
 };
 
@@ -26,7 +27,13 @@ type Props = {
 
 const PostBody = ({ content }: Props) => {
 	return (
-		<div className='max-w-2xl mx-auto'>
+		<div
+			className='max-w-2xl mx-auto'
+			style={{
+				fontSize: 'auto',
+				fontWeight: 'auto',
+			}}
+		>
 			<ReactMarkdown
 				children={content}
 				components={{

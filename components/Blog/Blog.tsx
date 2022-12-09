@@ -5,7 +5,7 @@ import { MorePosts } from '@components/MorePosts/MorePosts';
 
 export type BlogProps = {
 	allPosts: PostType[];
-	offset: number;
+	offset?: number;
 };
 
 const Blog = ({ allPosts, offset = allPosts.length }: BlogProps) => {

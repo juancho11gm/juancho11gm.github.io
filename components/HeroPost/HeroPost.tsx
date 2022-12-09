@@ -22,11 +22,16 @@ const HeroPost = ({
 	slug,
 }: Props) => {
 	return (
-		<section>
-			<div className='mb-8 md:mb-16'>
+		<section
+			className='md:grid gap-x-8 mb-10'
+			style={{
+				gridTemplateColumns: 'auto auto',
+			}}
+		>
+			<div className='mb-5 md:mb-0'>
 				<CoverImage title={title} src={coverImage} slug={slug} />
 			</div>
-			<div className='md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-10'>
+			<div className='flex flex-col justify-end'>
 				<div>
 					<h3 className='mb-4 text-4xl lg:text-5xl leading-tight'>
 						<Link
