@@ -16,10 +16,9 @@ export default function Index({ allPosts }: BlogProps) {
 				</Head>
 				<Container>
 					<OverviewCard />
-					<Link href='/about' className='underline'>
+					<Link href='/about' className='underline mb-12 mt-6 block'>
 						Read about me.
 					</Link>
-					<Intro />
 					<Blog allPosts={allPosts} offset={3} />
 					<Link className='block my-6 text-purple-400' href='/blog'>
 						Read more articles

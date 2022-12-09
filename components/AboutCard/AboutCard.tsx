@@ -8,7 +8,7 @@ const AboutCard = () => {
 
 	if (error || !data) return;
 	return (
-		<section className='mb-32'>
+		<section>
 			<p>
 				Hey, I'm Juan. I'm a Systems Engineer that has been working in the
 				<strong> web development</strong> world for 4 years.

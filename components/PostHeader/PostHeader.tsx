@@ -23,7 +23,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
 				</div>
 			</div>
 			<div className='mb-8 md:mb-16 sm:mx-0'>
-				<CoverImage title={title} src={coverImage} />
+				<CoverImage title={title} src={coverImage} className='m-auto' />
 			</div>
 		</>
 	);
