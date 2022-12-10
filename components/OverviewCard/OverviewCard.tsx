@@ -26,7 +26,7 @@ const OverviewCard = () => {
 					Juan González
 				</h1>
 				<Link
-					className='block text-center mb-2 text-gray-500 text-lg sm:text-left'
+					className='block text-center mb-2 text-gray-700 dark:text-gray-300 text-lg sm:text-left'
 					href='https://github.com/juancho11gm'
 					target='_blank'
 				>
@@ -46,7 +46,7 @@ const OverviewCard = () => {
 				<p className='mt-4 text-lg sm:mt-6'>
 					JavaScript, React and NextJS enthusiast.
 				</p>
-				<p className='text-gray-500 text-lg'>
+				<p className='text-gray-700 dark:text-gray-300 text-lg'>
 					Learning everyday about tech, personal growth and finance.
 				</p>
 			</div>

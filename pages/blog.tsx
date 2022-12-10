@@ -10,7 +10,7 @@ type Props = {
 	allPosts: PostType[];
 };
 
-export default function BlogaPage({ allPosts }: Props) {
+export default function BlogPage({ allPosts }: Props) {
 	return (
 		<>
 			<Layout>

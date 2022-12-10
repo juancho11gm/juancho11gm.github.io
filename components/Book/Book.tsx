@@ -20,7 +20,7 @@ const Book = ({
 			</figure>
 			<figcaption className='flex flex-col w-full mt-4'>
 				<h3 className='font-bold'>{title}</h3>
-				<p className='text-gray-500'>{author}</p>
+				<p className='text-gray-700 dark:text-gray-300'>{author}</p>
 				<div className='my-1 md:my-2 flex'>
 					<time className='mr-4 md:mr-6 text-purple-700'>{date}</time>
 				</div>

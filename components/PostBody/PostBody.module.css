@@ -22,7 +22,7 @@
 }
 
 .markdown img {
-	@apply rounded-md m-auto max-w-lg;
+	@apply rounded-md m-auto max-w-xs md:max-w-lg;
 }
 
 .markdown a {
