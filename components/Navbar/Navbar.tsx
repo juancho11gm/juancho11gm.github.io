@@ -33,7 +33,7 @@ const Navbar = () => {
 					<NavLink href='/blog' text='Blog' />
 					<MobileMenu />
 				</nav>
-				<ThemeToggle></ThemeToggle>
+				<ThemeToggle />
 			</header>
 		</Container>
 	);
