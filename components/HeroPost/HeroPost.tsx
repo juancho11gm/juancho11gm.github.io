@@ -33,7 +33,7 @@ const HeroPost = ({
 			</div>
 			<div className='flex flex-col justify-end'>
 				<div>
-					<h3 className='mb-4 text-4xl lg:text-5xl leading-tight'>
+					<h2 className='mb-4 text-4xl lg:text-5xl leading-tight'>
 						<Link
 							as={`/posts/${slug}`}
 							href='/posts/[slug]'
@@ -41,7 +41,7 @@ const HeroPost = ({
 						>
 							{title}
 						</Link>
-					</h3>
+					</h2>
 
 					<div className='mb-4 md:mb-0 text-lg'>
 						<DateFormatter dateString={date} />

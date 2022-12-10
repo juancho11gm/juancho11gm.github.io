@@ -8,16 +8,16 @@ const BooksGrid = () => {
 	const { data, error } = useSWR<BookType[]>('/api/books', fetcher);
 	if (error || !data) return;
 	const BookList = data.map(
-		({ title, author, date, category, description, tags, imageUrl }, index) => (
+		({ title, author, date, description, tags, imageUrl, shopUrl }, index) => (
 			<Book
 				key={`${index}-${title}`}
 				title={title}
 				author={author}
 				date={date}
-				category={category}
 				description={description}
 				tags={tags}
 				imageUrl={imageUrl}
+				shopUrl={shopUrl}
 			/>
 		)
 	);
