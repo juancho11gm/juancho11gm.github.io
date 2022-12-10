@@ -55,7 +55,7 @@ const ThemeToggle = ({ width = 36, height = 36 }) => {
 	};
 
 	return (
-		<button onClick={onClickHandler}>
+		<button onClick={onClickHandler} aria-label='Theme'>
 			<span className={isDark ? styles.moonIcon : styles.sunIcon}>
 				<svg
 					width={width}

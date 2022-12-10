@@ -64,6 +64,7 @@ const MobileMenu = () => {
 			<button
 				className={classNames(styles.menuButton, 'visible md:hidden')}
 				onClick={toggleMenu}
+				aria-label='Hamburger Menu'
 			>
 				<HamburgerMenu data-hide={isOpen} />
 				<Close data-hide={!isOpen} />
