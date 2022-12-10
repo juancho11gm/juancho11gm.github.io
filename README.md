@@ -1,8 +1,12 @@
+# DEPRECATED
+
+Please visit https://juan-gonzalez.netlify.app
+
 <h1 align="center">
   Welcome to my website!
 </h1>
 
-## Tech Stack
+## Tech Stack 
 
 - ⚔️ Platform: Node.js v16 LTS.
 - 🪝 Vite + React.
