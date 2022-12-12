@@ -5,7 +5,6 @@ import { Container } from '@components/Container/Container';
 import { PostHeader } from '@components/PostHeader/PostHeader';
 import { PostBody } from '@components/PostBody/PostBody';
 import { Layout } from '@components/Layout/Layout';
-import { Header } from '@components/Header/Header';
 import { getPostBySlug, getAllPosts } from '@lib/api';
 import { PostType } from '@interfaces/post';
 
@@ -26,7 +25,6 @@ export default function Post({ post }: Props) {
 	return (
 		<Layout>
 			<Container>
-				<Header />
 				<article className='mb-32'>
 					<Head>
 						<title>{title}</title>

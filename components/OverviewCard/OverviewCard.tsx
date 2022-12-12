@@ -35,7 +35,7 @@ const OverviewCard = () => {
 				<p className='text-lg'>
 					<strong>Web Engineer</strong> at{' '}
 					<Link
-						className='text-purple-400'
+						className='text-purple-500'
 						href='https://www.hugeinc.com/'
 						target='_blank'
 					>

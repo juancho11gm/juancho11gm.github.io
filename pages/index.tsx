@@ -20,7 +20,7 @@ export default function Index({ allPosts }: BlogProps) {
 						Read about me.
 					</Link>
 					<Blog allPosts={allPosts} offset={3} />
-					<Link className='block my-6 text-purple-400' href='/blog'>
+					<Link className='block my-6 text-purple-500' href='/blog'>
 						Read more articles
 					</Link>
 				</Container>
