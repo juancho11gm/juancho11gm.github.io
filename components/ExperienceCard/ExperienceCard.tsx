@@ -15,7 +15,7 @@ const ExperienceCard = (props: Company) => {
 				</div>
 				<div className='flex-col'>
 					<h3 className='text-lg'>
-						<Link href={href} target='_blank' className='text-purple-400'>
+						<Link href={href} target='_blank' className='text-purple-500'>
 							{name}.
 						</Link>
 					</h3>
