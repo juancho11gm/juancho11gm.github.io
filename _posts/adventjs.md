@@ -12,9 +12,9 @@ ogImage:
 
 # What is AdventJS
 
-AdventJS is a code challenge hosted by [adventjs](https://adventjs.dev/es). In the online platform you will solve daily programming challenges that can be solved using JavaScript and TypeScript.
+AdventJS is a code challenge hosted by [adventjs](https://adventjs.dev/es). In the online platform, you will solve daily programming challenges that can be solved using JavaScript and TypeScript.
 
-Each day in December, a new challenge is released. Each one of the challenges have a score based on the cognitive complexity and execution speed.
+Each day in December, a new challenge is released. Each one of the challenges has a score based on cognitive complexity and execution speed.
 
 This initiative is led by [MiduDev](https://midu.dev/).
 
@@ -70,7 +70,7 @@ Score: 200 points.
 
 ## Follow my solutions
 
-In the following [GitHub repository](https://github.com/juancho11gm/adventjs) you will find the soultions to the 2021 and 2022 challenges I've worked on.
+In the following [GitHub repository](https://github.com/juancho11gm/adventjs) you will find the solutions to the 2021 and 2022 challenges I've worked on.
 
 I encourage you to complete the challenge.
 

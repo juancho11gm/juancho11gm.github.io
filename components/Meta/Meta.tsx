@@ -35,7 +35,7 @@ const Meta = () => {
 				name='description'
 				content='Here you will find books and articles suggested by Juan Gonzalez.'
 			/>
-			<meta property='og:image' content='assets/blog/who-am-i/cover.jpg' />
+			<meta property='og:image' content='/assets/blog/who-am-i/cover.jpg' />
 		</Head>
 	);
 };
