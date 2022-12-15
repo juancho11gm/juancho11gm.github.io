@@ -21,7 +21,9 @@ _Calle Guayaquil con Calle Espejos, Quito._
 
 That was the beginning of a change of mentality that would turn our lives around. We started to read other types of books that would help us boost our careers. In both personal and professional life.
 
-Recently I finished one of the books that changed my mind: [Atomic Habits](https://jamesclear.com/atomic-habits). I realized that working on a side project that complements your career will help you to achieve your goals easier. By setting goals, moving forward step by step, tracking the small victories... I'm sure I will shape my personal and professional career by writing a blog. Right now I'm in the Goldilocks zone:
+Recently I finished one of the books that changed my mind: [Atomic Habits](https://jamesclear.com/atomic-habits). I realized that working on a side project that complements your career will help you to achieve your goals easier. By setting goals, moving forward step by step, tracking the small victories... I'm sure I will shape my personal and professional career by writing a blog.
+
+Right now I'm in the Goldilocks zone, I'm in the perfect place to keep my motivation high up. By creating this blog, I'll avoid boredom and I'll work on interesting topics that are adapted to the difficulty I am looking for.
 
 ![Atomic Habits](/assets/blog/who-am-i/goldilocks_rule.jpg)
 _Goldilocks rule. Atomic Habits by James Clear._
