@@ -13,7 +13,7 @@ export default function handler(req, res) {
           description:
             `Business and technical development of advertising units for the major automotive brands in the Stellantis' projects.`,
           iconUrl: '/assets/logos/stellantis.png',
-          tags: ['JavaScript', 'React', 'GSAP', 'SCSS', 'Jest', 'Puppeteer'],
+          tags: ['JavaScript', 'React', 'GSAP', 'SCSS', 'Jest', 'RTL', 'Puppeteer'],
         },
         {
           name: 'Virgin Voyages 🛳',
@@ -21,7 +21,7 @@ export default function handler(req, res) {
           description:
             'Frontend development for the Virgin Voyages content management system.',
           iconUrl: '/assets/logos/virgin-voyages.png',
-          tags: ['TypeScript', 'SCSS', 'Magnolia'],
+          tags: ['TypeScript', 'SCSS', 'Magnolia', 'FTL'],
         },
       ],
     },
