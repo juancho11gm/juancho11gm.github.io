@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { OverviewCard } from '@components/OverviewCard/OverviewCard';
 import { Container } from '@components/Container/Container';
 import { Layout } from '@components/Layout/Layout';
-import { Intro } from '@components/Intro/Intro';
 import { Blog, BlogProps } from '@components/Blog/Blog';
 import { getAllPosts } from '@lib/api';
 
