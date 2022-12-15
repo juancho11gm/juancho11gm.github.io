@@ -20,7 +20,7 @@ const CoverImage = ({ title, src, slug, className }: Props) => {
 		/>
 	);
 	return (
-		<div className={classnames('max-w-lg flex', className)}>
+		<div className={classnames('lg:max-w-4xl flex', className)}>
 			{slug ? (
 				<Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
 					{image}

@@ -33,7 +33,7 @@ const HeroPost = ({
 			</div>
 			<div className='flex flex-col justify-end'>
 				<div>
-					<h2 className='mb-4 text-4xl lg:text-5xl leading-tight'>
+					<h2 className='mb-1 text-4xl lg:text-5xl leading-tight'>
 						<Link
 							as={`/posts/${slug}`}
 							href='/posts/[slug]'
@@ -43,12 +43,12 @@ const HeroPost = ({
 						</Link>
 					</h2>
 
-					<div className='mb-4 md:mb-0 text-lg'>
+					<div className='mb-2 md:mb-0 text-lg'>
 						<DateFormatter dateString={date} />
 					</div>
 				</div>
 				<div>
-					<p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
+					<p className='text-lg leading-relaxed mb-4'>{excerpt}.</p>
 					<div className='flex items-center'>
 						<Avatar name={author.name} picture={author.picture} />
 						<div className='text-xl font-bold'>{author.name}</div>
