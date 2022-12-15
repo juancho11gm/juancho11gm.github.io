@@ -29,7 +29,7 @@ export default function Post({ post }: Props) {
 					<Head>
 						<title>{title}</title>
 						<meta property='og:image' content={post.ogImage.url} />
-						<meta name='description' content={title} />
+						<meta name='description' content={post.excerpt} />
 					</Head>
 					<PostHeader
 						title={post.title}
@@ -59,6 +59,7 @@ export async function getStaticProps({ params }: Params) {
 		'content',
 		'ogImage',
 		'coverImage',
+		'excerpt',
 	]);
 
 	return {
