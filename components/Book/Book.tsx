@@ -22,7 +22,7 @@ const Book = ({
 				<h3 className='font-bold'>{title}</h3>
 				<p className='text-gray-700 dark:text-gray-300'>{author}</p>
 				<div className='my-1 md:my-2 flex'>
-					<time className='mr-4 md:mr-6 text-purple-700'>{date}</time>
+					<time className='mr-4 md:mr-6 text-purple-500'>{date}</time>
 				</div>
 				<p className='my-2 md:my-4 shrink-0 w-full'>{description}</p>
 			</figcaption>
