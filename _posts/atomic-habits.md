@@ -111,7 +111,7 @@ Additional insights:
 - Choose your path according to your **skills/passions**.
 - Keep going when it's not exciting. That is the real challenge.
 - Set your goals and track your progress.
-- Reflect and review for the long-term improvement
+- Reflect and review for the long-term improvement.
 
 ```js
 const mastery = habits + deliberatePractice;
