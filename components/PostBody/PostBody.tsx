@@ -2,6 +2,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactMarkdown from 'react-markdown';
 import { ReactNode } from 'react';
+import remarkGfm from 'remark-gfm';
 import styles from './PostBody.module.css';
 import classNames from 'classnames';
 
@@ -37,6 +38,7 @@ const PostBody = ({ content }: Props) => {
 						<CodeBlock children={props.children} className={props.className} />
 					),
 				}}
+				remarkPlugins={[remarkGfm]}
 			/>
 		</div>
 	);

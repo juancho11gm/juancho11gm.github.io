@@ -6,7 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-	@apply my-6;
+	@apply my-4;
 }
 
 .markdown h2 {
@@ -18,7 +18,7 @@
 }
 
 .markdown ul {
-	@apply list-disc;
+	@apply list-disc pl-4;
 }
 
 .markdown img {
@@ -26,9 +26,18 @@
 }
 
 .markdown a {
-	@apply text-purple-700 underline;
+	@apply text-purple-500 underline;
+}
+
+.markdown table {
+	@apply m-auto;
 }
 
 .markdown em {
 	@apply my-2 text-center block;
+}
+
+.markdown th,
+.markdown td {
+	@apply border p-2;
 }
