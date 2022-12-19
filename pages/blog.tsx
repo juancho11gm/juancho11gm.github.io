@@ -15,7 +15,7 @@ export default function BlogPage({ allPosts }: Props) {
 		<>
 			<Layout>
 				<Head>
-					<title>Next.js Blog Example</title>
+					<title>Blog | Juan González</title>
 					<meta property='og:image' content='/assets/blog/who-am-i/cover.jpg' />
 					<meta
 						name='description'
