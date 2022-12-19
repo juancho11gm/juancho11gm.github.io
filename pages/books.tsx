@@ -9,6 +9,11 @@ export default function About() {
 			<Layout>
 				<Head>
 					<title>Books | Juan González</title>
+					<meta property='og:image' content='/assets/blog/who-am-i/cover.jpg' />
+					<meta
+						name='description'
+						content='Here you will find books  suggested by Juan Gonzalez.'
+					/>
 				</Head>
 				<Container>
 					<BooksGrid />

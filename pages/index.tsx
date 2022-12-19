@@ -12,6 +12,11 @@ export default function Index({ allPosts }: BlogProps) {
 			<Layout>
 				<Head>
 					<title>Juan González</title>
+					<meta property='og:image' content='/assets/blog/who-am-i/cover.jpg' />
+					<meta
+						name='description'
+						content='Here you will find books and articles suggested by Juan Gonzalez.'
+					/>
 				</Head>
 				<Container>
 					<OverviewCard />
