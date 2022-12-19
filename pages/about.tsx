@@ -10,6 +10,8 @@ export default function About() {
 			<Layout>
 				<Head>
 					<title>About Juan González</title>
+					<meta property='og:image' content='/assets/blog/who-am-i/cover.jpg' />
+					<meta name='description' content='About Juan Gonzalez.' />
 				</Head>
 				<Container>
 					<OverviewCard />
