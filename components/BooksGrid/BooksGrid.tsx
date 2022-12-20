@@ -5,6 +5,7 @@ import { fetcher } from '@lib/fetcher';
 import useSWR from 'swr';
 
 const BooksGrid = () => {
+	// Client Side SWR (Stale while revalidate)
 	const { data, error } = useSWR<BookType[]>('/api/books', fetcher);
 	if (error || !data) return;
 	const BookList = data.map(

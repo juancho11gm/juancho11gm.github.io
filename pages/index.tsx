@@ -36,6 +36,8 @@ export default function Index({ allPosts }: BlogProps) {
 /**
  * NextJS will pre-render this page at build time using
  * the props returned.
+ *
+ * SSG (Static Site generation)
  */
 export const getStaticProps = async () => {
 	/**
@@ -53,6 +55,7 @@ export const getStaticProps = async () => {
 
 	return {
 		props: { allPosts },
+		// ISG (Incremental static generation)
 		// Next.js will attempt to re-generate the page:
 		// - When a request comes in
 		// - At most once every 60 seconds
