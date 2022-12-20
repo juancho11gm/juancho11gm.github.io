@@ -4,6 +4,7 @@ import { Company } from '@interfaces/experience';
 import { fetcher } from '@lib/fetcher';
 
 const AboutCard = () => {
+	// Client Side SWR (Stale while revalidate)
 	const { data, error } = useSWR<Company[]>('/api/experience', fetcher);
 
 	if (error || !data) return;
