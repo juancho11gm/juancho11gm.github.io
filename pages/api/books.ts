@@ -22,7 +22,7 @@ export default function handler(req, res) {
       title: 'Never split the difference',
       author: 'Chris Voss',
       date: '2016',
-      description: 'Inteligencia emocional para conseguir acuerdos donde no se puede permitir una respuesta negativa. Experiencias compartidas por un negociador del FBI que sirven para los negocios y la vida. Las reglas están basadas en la experiencia.',
+      description: 'Understand the emotional intelligence to achieve the best agreements. Learn from experiences shared by an FBI kidnapper negotiator. These lessons work for business and personal life.',
       tags: ['🪴 Personal Growth', '🤝 Negotiation', '🧠 Psychology'],
       imageUrl: '/assets/books/never-split-the-difference.webp',
       shopUrl: 'https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805'
@@ -35,6 +35,15 @@ export default function handler(req, res) {
       tags: ['🪴 Personal Growth', '🐷 Finance'],
       imageUrl: '/assets/books/lo-que-debes-saber-del-dinero.webp',
       shopUrl: 'https://www.planetadelibros.com.co/libro-lo-que-debes-saber-del-dinero-y-nunca-te-ensenaron-nueva-edicion/352267'
+    },
+    {
+      title: 'The richest man in babylon',
+      author: 'George S. Clason',
+      date: 'Original 1926',
+      description: 'Learn financial principles through novel stories in the ancient Babylon.',
+      tags: ['🪴 Personal Growth', '🐷 Finance'],
+      imageUrl: '/assets/books/the-richest-man-in-babylon.webp',
+      shopUrl: 'https://www.buscalibre.com.co/libro-the-richest-man-in-babylon-original-1926-edition-libro-en-ingles/9781508524359/p/53644915'
     }
   ])
 }
