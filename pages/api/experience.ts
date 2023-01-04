@@ -11,7 +11,7 @@ export default function handler(req, res) {
           name: 'Stellantis 🏎',
           role: 'Web Engineer',
           description:
-            `Business and technical development of advertising units for the major automotive brands in the Stellantis' projects.`,
+            `Business and technical development of advertising units for the major automotive brands in the Stellantis' The advertising pieces were seen by millions of users worldwide.`,
           iconUrl: '/assets/logos/stellantis.png',
           tags: ['JavaScript', 'React', 'GSAP', 'SCSS', 'Jest', 'RTL', 'Puppeteer'],
         },
@@ -19,7 +19,7 @@ export default function handler(req, res) {
           name: 'Virgin Voyages 🛳',
           role: 'Web Engineer',
           description:
-            'Frontend development for the Virgin Voyages content management system.',
+            'Development of the frontend components for the Content Management System to raise the customer conversion rate.',
           iconUrl: '/assets/logos/virgin-voyages.png',
           tags: ['TypeScript', 'SCSS', 'Magnolia', 'FTL'],
         },

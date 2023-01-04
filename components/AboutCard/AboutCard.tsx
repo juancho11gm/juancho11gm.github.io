@@ -7,7 +7,7 @@ const AboutCard = () => {
 	// Client Side SWR (Stale while revalidate)
 	const { data, error } = useSWR<Company[]>('/api/experience', fetcher);
 
-	if (error || !data) return;
+	if (error || !data) return <></>;
 	return (
 		<section>
 			<p>
