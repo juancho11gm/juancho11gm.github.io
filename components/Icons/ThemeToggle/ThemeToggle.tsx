@@ -8,13 +8,14 @@ const ThemeToggle = () => {
 	const x = theme === Theme.Dark ? '100%' : '0';
 	const decorationRef = useRef<HTMLDivElement>(null);
 
+	// Translate the decorator the first time without animation.
 	useEffect(() => {
-		// Translate the decorator the first time without animation.
-		decorationRef.current.style.transform = `translateX(${x})`;
+		if (decorationRef.current)
+			decorationRef.current.style.transform = `translateX(${x})`;
 	}, []);
 
 	useEffect(() => {
-		moveX(decorationRef.current, x);
+		if (decorationRef?.current) moveX(decorationRef.current, x);
 	}, [theme]);
 
 	const MoonIcon = () => (
