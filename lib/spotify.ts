@@ -1,4 +1,4 @@
-import querystring from 'querystring';
+import queryString from 'query-string';
 
 /**
  * https://developer.spotify.com/console/get-users-currently-playing-track/
@@ -30,7 +30,7 @@ async function getAccessToken() {
     },
     // Follow https://khalilstemmler.com/articles/tutorials/getting-the-currently-playing-song-spotify/
     // for getting the refresh token
-    body: querystring.stringify({
+    body: queryString.stringify({
       grant_type: 'refresh_token',
       refresh_token
       // uncomment for getting the permanent refresh token
