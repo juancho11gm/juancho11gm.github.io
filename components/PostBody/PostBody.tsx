@@ -18,7 +18,7 @@ const CodeBlock = ({ className, children }: CodeBlockProps) => {
 			<SyntaxHighlighter
 				children={String(children).replace(/\n$/, '')}
 				style={vscDarkPlus}
-				language={match[1]}
+				language={match?.[1]}
 			/>
 		</div>
 	);
@@ -35,7 +35,10 @@ const PostBody = ({ content }: Props) => {
 				children={content}
 				components={{
 					code: (props) => (
-						<CodeBlock children={props.children} className={props.className} />
+						<CodeBlock
+							children={props.children}
+							className={props.className || ''}
+						/>
 					),
 				}}
 				remarkPlugins={[remarkGfm]}

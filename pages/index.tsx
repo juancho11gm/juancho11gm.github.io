@@ -5,6 +5,7 @@ import { Container } from '@components/Container/Container';
 import { Layout } from '@components/Layout/Layout';
 import { Blog, BlogProps } from '@components/Blog/Blog';
 import { getAllPosts } from '@lib/api';
+import { SectionTitle } from '@components/SectionTitle/SectionTitle';
 
 export default function Index({ allPosts }: BlogProps) {
 	return (
@@ -23,10 +24,8 @@ export default function Index({ allPosts }: BlogProps) {
 					<Link href='/about' className='underline mb-12 mt-6 block'>
 						Read about me.
 					</Link>
-					<Blog allPosts={allPosts} offset={3} />
-					<Link className='block my-6 text-purple-500' href='/blog'>
-						Read more articles
-					</Link>
+					<SectionTitle text='Blog.' />
+					<Blog allPosts={allPosts} />
 				</Container>
 			</Layout>
 		</>
@@ -50,6 +49,7 @@ export const getStaticProps = async () => {
 		'slug',
 		'author',
 		'coverImage',
+		'orientation',
 		'excerpt',
 	]);
 

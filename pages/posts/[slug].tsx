@@ -25,20 +25,19 @@ export default function Post({ post }: Props) {
 	return (
 		<Layout>
 			<Container>
-				<article className='mb-32'>
-					<Head>
-						<title>{title}</title>
-						<meta property='og:image' content={post.ogImage.url} />
-						<meta name='description' content={post.excerpt} />
-					</Head>
-					<PostHeader
-						title={post.title}
-						coverImage={post.coverImage}
-						date={post.date}
-						author={post.author}
-					/>
-					<PostBody content={post.content} />
-				</article>
+				<Head>
+					<title>{title}</title>
+					<meta property='og:image' content={post.ogImage.url} />
+					<meta name='description' content={post.excerpt} />
+				</Head>
+				<PostHeader
+					title={post.title}
+					coverImage={post.coverImage}
+					date={post.date}
+					author={post.author}
+					orientation={post.orientation}
+				/>
+				<PostBody content={post.content} />
 			</Container>
 		</Layout>
 	);
@@ -58,6 +57,7 @@ export async function getStaticProps({ params }: Params) {
 		'author',
 		'content',
 		'ogImage',
+		'orientation',
 		'coverImage',
 		'excerpt',
 	]);

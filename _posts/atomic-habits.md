@@ -2,6 +2,7 @@
 title: 'Atomic Habits'
 excerpt: 'How the small but significant actions will take you to the next level'
 coverImage: '/assets/blog/atomic-habits/atomic-habits.jpg'
+orientation: landscape
 date: '2022-12-19'
 author:
   name: Juan G
@@ -9,8 +10,6 @@ author:
 ogImage:
   url: '/assets/blog/atomic-habits/atomic-habits.jpg'
 ---
-
-# Atomic Habits
 
 The good habits allow us to improve our live. This amazing book brings ideas based on proven cientific investigations to transform our daily basis by applying small but significant changes.
 

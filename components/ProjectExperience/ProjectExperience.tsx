@@ -1,7 +1,7 @@
+import Image from 'next/image';
 import classNames from 'classnames';
 import { ProjectExperience } from '@interfaces/projects';
 import styles from './ProjectExperience.module.css';
-import Image from 'next/image';
 
 const ProjectExperience = ({
 	name = '',

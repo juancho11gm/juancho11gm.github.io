@@ -5,7 +5,12 @@ import { Container } from '@components/Container/Container';
 import { MobileMenu } from '@components/MobileMenu/MobileMenu';
 import { ThemeToggle } from '@components/Icons/ThemeToggle/ThemeToggle';
 
-const NavLink = ({ href, text }) => {
+type NavLink = {
+	href: string;
+	text: string;
+};
+
+const NavLink = ({ href, text }: NavLink) => {
 	const router = useRouter();
 	const isActive = router.asPath === href;
 
@@ -28,7 +33,6 @@ const Navbar = () => {
 			<header className='relative flex justify-between items-center pt-8'>
 				<nav className='flex items-center md:block'>
 					<NavLink href='/' text='Home' />
-					<NavLink href='/blog' text='Blog' />
 					<NavLink href='/books' text='Books' />
 					<NavLink href='/about' text='About' />
 					<MobileMenu />

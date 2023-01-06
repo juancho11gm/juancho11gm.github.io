@@ -1,7 +1,8 @@
 ---
 title: 'AdventJS'
-excerpt: 'Practice programming logic with JS and TS'
+excerpt: 'Practice programming logic with JavaScript and TypeScript'
 coverImage: '/assets/blog/adventjs/adventjs.jpg'
+orientation: landscape
 date: '2022-12-15'
 author:
   name: Juan G
@@ -9,8 +10,6 @@ author:
 ogImage:
   url: '/assets/blog/adventjs/adventjs.jpg'
 ---
-
-# What is AdventJS
 
 AdventJS is a code challenge hosted by [adventjs](https://adventjs.dev/es). In the online platform, you will solve daily programming challenges that can be solved using JavaScript and TypeScript.
 
