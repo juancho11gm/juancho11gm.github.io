@@ -1,13 +1,7 @@
-import useSWR from 'swr';
 import { ExperienceCard } from '@components/ExperienceCard/ExperienceCard';
 import { Company } from '@interfaces/experience';
-import { fetcher } from '@lib/fetcher';
 
-const AboutCard = () => {
-	// Client Side SWR (Stale while revalidate)
-	const { data, error } = useSWR<Company[]>('/api/experience', fetcher);
-
-	if (error || !data) return <></>;
+const AboutCard = ({ companies }: { companies: Company[] }) => {
 	return (
 		<section>
 			<p>
@@ -21,7 +15,7 @@ const AboutCard = () => {
 			</p>
 			<h2 className='font-bold text-2xl mt-6 mb-4 sm:text-3xl '>Career Path</h2>
 			<ul>
-				{data.map(
+				{companies.map(
 					(
 						{ name, type, startDate, endDate, iconUrl, href, projects },
 						index

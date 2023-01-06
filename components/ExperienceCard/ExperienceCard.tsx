@@ -6,7 +6,7 @@ import { Company } from '@interfaces/experience';
 const ExperienceCard = (props: Company) => {
 	const { name, type, startDate, endDate, iconUrl, href, projects } = props;
 	return (
-		<article className='rounded-md p-6 mb-4 sm:mb-8 dark:shadow-pink-300'>
+		<article className='rounded-md p-6  dark:shadow-pink-300'>
 			<div className='flex'>
 				<div className='w-24 h-24 relative flex shrink-0 mr-4'>
 					<Link href={href} target='_blank'>

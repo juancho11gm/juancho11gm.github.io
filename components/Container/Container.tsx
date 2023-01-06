@@ -2,8 +2,8 @@ type Props = {
 	children?: React.ReactNode;
 };
 
-const Container = ({ children, ...restProps }: Props) => {
-	return <div className='container mx-auto px-5'>{children}</div>;
+const Container = ({ children }: Props) => {
+	return <div className='container max-w-5xl px-5 m-auto'>{children}</div>;
 };
 
 export { Container };

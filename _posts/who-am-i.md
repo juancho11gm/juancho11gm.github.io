@@ -2,6 +2,7 @@
 title: 'Who am I?'
 excerpt: "Why I'm writting this. Who is Juan Gonzalez"
 coverImage: '/assets/blog/who-am-i/cover.jpg'
+orientation: square
 date: '2022-12-09'
 author:
   name: Juan G
@@ -9,8 +10,6 @@ author:
 ogImage:
   url: '/assets/blog/who-am-i/cover.jpg'
 ---
-
-## Why I'm writting this?.
 
 Some months ago I was crossing the border between Colombia and Ecuador. I was traveling from Pasto 🇨🇴 to Quito 🇪🇨 with my partner.
 

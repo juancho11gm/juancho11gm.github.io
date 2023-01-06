@@ -28,7 +28,7 @@ The metadata of every post is handled by [`gray-matter`](https://github.com/jons
 
 React Markdown and React Syntax Highlighter are in charge of rendering the markdown content into HTML with Code Syntax Highlighting.
 
-## Why SSG, ISG and SWR
+## Why ISG and SWR
 
 It is recommend using Static Generation (with and without data) whenever possible because the pages can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
@@ -36,7 +36,7 @@ The Books and the Blog Posts can be pre-rendered ahead of a user's request so SS
 
 The page does **not** show frequently updated data, and the page content does **not** change on every request.
 
-On the other hand, Spotify data and the About Page data is fetched using SWR. That means the pages can skip pre-rendering some parts of a page and then use client-side JavaScript to populate them.
+On the other hand, Spotify data is fetched using SWR. That means the pages can skip pre-rendering some parts of a page and then use client-side JavaScript to populate them.
 
 ## Local Development
 
