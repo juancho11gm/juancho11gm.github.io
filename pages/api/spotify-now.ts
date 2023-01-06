@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getPlayingSong } from 'lib/spotify';
+import { SpotifyData } from '@interfaces/spotify';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const response = await getPlayingSong();
@@ -13,7 +14,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
   }
 
-  const song = await response.json();
+  const song: SpotifyData = await response.json();
 
   if (song?.item === null) {
     res.status(200).json({

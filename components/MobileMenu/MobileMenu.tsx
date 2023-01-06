@@ -6,7 +6,12 @@ import { HamburgerMenu } from '@components/Icons/HamburgerMenu/HamburgerMenu';
 import { Close } from '@components/Icons/Close/Close';
 import styles from './MobileMenu.module.css';
 
-const NavLink = ({ href, text }) => {
+type NavLink = {
+	href: string;
+	text: string;
+};
+
+const NavLink = ({ href, text }: NavLink) => {
 	const router = useRouter();
 	const isActive = router.asPath === href;
 
