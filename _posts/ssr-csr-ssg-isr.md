@@ -105,4 +105,6 @@ Just take into account:
 
 ## References
 
-I highly recommend this article where you can use a cheatsheet to choose between them.
+I highly recommend this article where you can use a cheat sheet to choose between them.
+
+- [GitHub codebase](https://github.com/juancho11gm/csr-ssr-ssg-isr)
