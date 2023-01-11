@@ -22,7 +22,10 @@ export const BooksGrid = ({ books }: { books: BookType[] }) => {
 	return (
 		<section className='my-8'>
 			<SectionTitle text='Recommended Books.' />
-			<p className='my-4 md:my-8'>Here you will find some books I recommend.</p>
+			<p className='my-4 md:my-8'>
+				What should you read next?. Here you will find some books you should
+				consider.
+			</p>
 			<div className='my-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8'>
 				{BookList}
 			</div>
