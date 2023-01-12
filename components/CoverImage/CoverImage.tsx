@@ -26,9 +26,6 @@ const CoverImage = ({ title, src, slug, className, orientation }: Props) => {
 	);
 	return (
 		<div
-			style={{
-				maxHeight: '40rem',
-			}}
 			className={classnames(
 				'relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800 hover:scale-105 aspect-square max-w-3xl',
 				orientation === 'landscape' ? 'aspect-video' : 'aspect-square',
