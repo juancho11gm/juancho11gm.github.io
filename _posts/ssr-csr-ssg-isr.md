@@ -44,7 +44,33 @@ Search Engines will crawl the markup for indexing the content. So probably you w
 
 If SEO is important for your business, you can use libraries like [react-helmet](https://github.com/nfl/react-helmet) to manage the head tag information (title, meta tags, link tags...) or you can work hand in hand with SSR or SSG for **pre-rendering** as much information as possible.
 
-TODO: insert CSR code example.
+Fetch and render the data using Client Side Rendering like this:
+
+```js
+// pages/csr.js
+import { useEffect, useState } from 'react';
+
+export default function CSR() {
+	const [data, setData] = useState(null);
+	const [isLoading, setLoading] = useState(false);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			setLoading(true);
+			const response = await fetch(
+				'https://worldtimeapi.org/api/timezone/America/Bogota'
+			);
+			const data = await response.json();
+			setData(data);
+			setLoading(false);
+		};
+
+		fetchData();
+	}, []);
+
+	return <>{/* use data */}</>;
+}
+```
 
 ## Server Side Rendering
 
@@ -59,7 +85,22 @@ Usually, you need Server Side Rendering in these scenarios:
 - Fresh Data: It is useful for pulling the most recent data (instead of older static files) when depending on the user interactions.
 - For security purposes when managing user authentication.
 
-TODO: insert SSR code example.
+Fetch and render the data using Server Side Rendering like this:
+
+```js
+// pages/ssr.js
+export default function SSR({ data }) {
+	return <>{/* use data */}</>;
+}
+
+export async function getServerSideProps() {
+	const response = await fetch(
+		'https://worldtimeapi.org/api/timezone/America/Bogota'
+	);
+	const data = await response.json();
+	return { props: { data } };
+}
+```
 
 ## Static Site Generation
 
@@ -75,7 +116,22 @@ SEO and Performance are valuable key points when working with Static Site Genera
 
 Some tools used for SSG are Jekyll, Hugo, and Gatsby. The pre-built HTML, CSS and JavaScript files can be served by a CDN or a web server.
 
-TODO: insert SSR code example.
+Fetch and render the data using Static Site Generation like this:
+
+```js
+// pages/ssg.js
+export default function SSG({ data }) {
+	return <>{/* use data */}</>;
+}
+
+export async function getStaticProps() {
+	const response = await fetch(
+		'https://worldtimeapi.org/api/timezone/America/Bogota'
+	);
+	const data = await response.json();
+	return { props: { data } };
+}
+```
 
 ## Incremental Static Regeneration
 
@@ -90,7 +146,24 @@ However, if no one visits the page while the time finishes, the page will not re
 
 The web crawlers will index the static content as usual but to maintain good SEO performance the incremental static regeneration process needs to update the sitemap and URLs, and also the metadata in the regenerated pages. So the content will be up to date for the search engines.
 
-TODO: insert SSR code example.
+Fetch and render the data using Static Site Regeneration like this:
+
+```js
+// pages/isr.js
+export default function ISR({ data }) {
+	return <>{/* use data */}</>;
+}
+
+export async function getStaticProps() {
+	const response = await fetch(
+		'https://worldtimeapi.org/api/timezone/America/Bogota'
+	);
+	const data = await response.json();
+	// Next.js will attempt to re-generate the page
+	// when a request comes in at most once every 60 seconds.
+	return { props: { data }, revalidate: 15 };
+}
+```
 
 ## Conclusion
 
@@ -101,10 +174,12 @@ Just take into account:
 - Do you need the data to be fresh and refreshed?
 - Will the website be available for Search Engines Indexing?
 - Website Performance.
-- What pieces of code need to be executed on the client or on the server?
+- What pieces of code need to be executed on the client or the server?
+
+Check this demo running: https://csr-ssr-ssg-ssr.vercel.app.
 
 ## References
 
-I highly recommend this article where you can use a cheat sheet to choose between them.
+I highly recommend this article where you can use a cheat sheet to choose between them: [How to choose between Next.js CSR, SSR, SSG, and ISR](https://theodorusclarence.com/blog/nextjs-fetch-usecase#cheatsheet).
 
-- [GitHub codebase](https://github.com/juancho11gm/csr-ssr-ssg-isr)
+- [GitHub codebase with an example](https://github.com/juancho11gm/csr-ssr-ssg-isr).
