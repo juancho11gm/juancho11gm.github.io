@@ -59,6 +59,16 @@ const books: BookType[] = [
 		shopUrl:
 			'https://www.buscalibre.com.co/libro-the-richest-man-in-babylon-original-1926-edition-libro-en-ingles/9781508524359/p/53644915',
 	},
+	{
+		title: 'Invent and Wander',
+		author: 'Jeff Bezos and Walter Isaacson',
+		date: '202O',
+		description:
+			'The core principles and philosophy that have guided him in creating, building, and leading Amazon and other business.',
+		tags: ['💆🏻‍♂️ Autobiography', '📊 Entrepreneurship'],
+		imageUrl: '/assets/books/invent-and-wander.jpeg',
+		shopUrl: 'https://www.amazon.com/-/es/Walter-Isaacson-ebook/dp/B08BCCT6MW',
+	},
 ];
 
 export default function Books() {
