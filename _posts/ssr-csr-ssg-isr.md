@@ -188,3 +188,4 @@ Just take into account:
 I highly recommend this article where you can use a cheat sheet to choose between them: [How to choose between Next.js CSR, SSR, SSG, and ISR](https://theodorusclarence.com/blog/nextjs-fetch-usecase#cheatsheet).
 
 - [GitHub codebase with an example](https://github.com/juancho11gm/csr-ssr-ssg-isr).
+- [NextJS - Rendering](https://nextjs.org/learn/foundations/how-nextjs-works/rendering).
