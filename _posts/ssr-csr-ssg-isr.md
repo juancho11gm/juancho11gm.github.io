@@ -3,7 +3,7 @@ title: 'What the heck is CSR, SSR, SSG and ISR?'
 excerpt: 'Server Side Rendering, Client Side Rendering, Static Site Generation and Incremental Static Regeneration explained'
 coverImage: '/assets/blog/ssr-csr-ssg-isr/ssr-csr-ssg-isr.jpg'
 orientation: square
-date: '2023-01-05'
+date: '2023-01-12'
 author:
   name: Juan G
   picture: '/assets/me/profilepic.jpg'
