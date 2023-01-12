@@ -165,6 +165,13 @@ export async function getStaticProps() {
 }
 ```
 
+## Demo
+
+You can check this demo and the codebase using each one of the approaches described above.
+
+![Demo](/assets/blog/ssr-csr-ssg-isr/demo.png)
+_Check this demo running: https://csr-ssr-ssg-ssr.vercel.app._
+
 ## Conclusion
 
 You can use whatever way you want, according to your app needs. You can even use them together, so you can have different rendering approaches between pages.
@@ -175,8 +182,6 @@ Just take into account:
 - Will the website be available for Search Engines Indexing?
 - Website Performance.
 - What pieces of code need to be executed on the client or the server?
-
-Check this demo running: https://csr-ssr-ssg-ssr.vercel.app.
 
 ## References
 
