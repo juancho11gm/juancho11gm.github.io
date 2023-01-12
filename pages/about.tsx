@@ -68,7 +68,7 @@ const companies: Company[] = [
 				role: 'Teacher Assistant',
 				description:
 					'Drive students to the best practices in basic algorithms and object-oriented programming classes (C++, Java) by giving classes and giving valuable feedback.',
-				iconUrl: '/assets/logos/code.jpg',
+				iconUrl: '/assets/logos/code.jpeg',
 				tags: ['C++', 'Java'],
 			},
 			{

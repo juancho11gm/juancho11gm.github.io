@@ -29,6 +29,7 @@ async function getAccessToken() {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     // Follow https://khalilstemmler.com/articles/tutorials/getting-the-currently-playing-song-spotify/
+    // and https://theodorusclarence.com/blog/spotify-now-playing 
     // for getting the refresh token
     body: queryString.stringify({
       grant_type: 'refresh_token',

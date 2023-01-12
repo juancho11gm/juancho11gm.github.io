@@ -40,7 +40,6 @@ const NavList = () => {
 			<NavLink href='/' text='Home' />
 			<NavLink href='/about' text='About' />
 			<NavLink href='/books' text='Books' />
-			<NavLink href='/blog' text='Blog' />
 		</ul>
 	);
 };
