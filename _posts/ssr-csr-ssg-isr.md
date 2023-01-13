@@ -1,14 +1,14 @@
 ---
 title: 'What the heck is CSR, SSR, SSG and ISR?'
 excerpt: 'Server Side Rendering, Client Side Rendering, Static Site Generation and Incremental Static Regeneration explained'
-coverImage: '/assets/blog/ssr-csr-ssg-isr/ssr-csr-ssg-isr.jpg'
+coverImage: '/assets/blog/ssr-csr-ssg-isr/cover.jpg'
 orientation: square
 date: '2023-01-12'
 author:
   name: Juan G
   picture: '/assets/me/profilepic.jpg'
 ogImage:
-  url: '/assets/blog/ssr-csr-ssg-isr/ssr-csr-ssg-isr.jpg'
+  url: '/assets/blog/ssr-csr-ssg-isr/cover.jpg'
 ---
 
 I've been struggling with CSR, SSR, SSG and ISG for a while. I worked with [Create React App](https://create-react-app.dev) before, but I felt overwhelmed with all the available terms when working with frameworks such as **NextJS**.
@@ -33,7 +33,7 @@ You can inspect the source code of the website with right-click. If you can't se
 _Inspect the website and search for the content._
 
 When navigating between pages, the CSR pages will load very fast since we don't have to wait for the **initial** markup.
-However, the performance may vary when fetching data with CSR. We will have a loading state while the data is fetched.
+However, the load state will take longer when fetching data with CSR. We will have a loading state while the data is fetched.
 So, we have to wait until the request is finished to render all the content.
 
 That data is fetched on **every** page request, so we will get the most updated one.
@@ -54,6 +54,7 @@ export default function CSR() {
 	const [data, setData] = useState(null);
 	const [isLoading, setLoading] = useState(false);
 
+	// Fetches data from an API on the first render
 	useEffect(() => {
 		const fetchData = async () => {
 			setLoading(true);
@@ -74,7 +75,7 @@ export default function CSR() {
 
 ## Server Side Rendering
 
-In contrast to **Client Side Rendering**, **Server Side Rendering** happens when the client creates a request to the web server and it is in charge of rendering the web pages at **runtime**. The web server sends the HTML to the client browser so the website can be displayed.
+In contrast to **Client Side Rendering**, **Server Side Rendering** happens when the client creates a request to the web server and it is in charge of rendering the web pages at **runtime**. The web server sends the already-filled HTML to the client browser so the website can be displayed.
 
 If you can see the website content in the HTML source code, it is injected by JavaScript after loading the page. Server Side Rendering is always slower than serving static content.
 

@@ -6,6 +6,10 @@
   Tailwind customizing colors: https://tailwindcss.com/docs/customizing-colors
 **/
 
+html {
+	scroll-behavior: smooth;
+}
+
 html body {
 	@apply bg-gray-50;
 }
