@@ -22,11 +22,15 @@
 }
 
 .markdown img {
-	@apply rounded-md m-auto max-w-xs md:max-w-lg;
+	@apply rounded-md m-auto max-w-xs md:max-w-xl;
 }
 
-.markdown a {
-	@apply text-purple-500 underline;
+.markdown :not(h1, h2, h3, h4, h5, h6) a {
+	@apply text-purple-500 underline hover:underline;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a {
+	@apply hover:underline;
 }
 
 .markdown table {
