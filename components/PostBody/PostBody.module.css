@@ -21,6 +21,10 @@
 	@apply list-disc pl-4;
 }
 
+.markdown ol {
+	@apply list-decimal pl-4;
+}
+
 .markdown img {
 	@apply rounded-md m-auto max-w-xs md:max-w-xl;
 }
@@ -30,7 +34,18 @@
 }
 
 .markdown :is(h1, h2, h3, h4, h5, h6) a {
-	@apply hover:underline;
+	@apply hover:underline relative;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a::before {
+	content: '🔗';
+	position: absolute;
+	opacity: 0;
+	left: -2.2rem;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a:hover::before {
+	opacity: 1;
 }
 
 .markdown table {

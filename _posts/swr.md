@@ -19,9 +19,9 @@ SWR works thanks to the [HTTP RFC 5861](https://www.rfc-editor.org/rfc/rfc5861) 
 
 In a nutshell, SWR:
 
-- Get the **stale** data from the cache.
-- **Revalidates** the data.
-- Comes with up-to-date data.
+1. Get the **stale** data from the cache.
+2. **Revalidates** the data.
+3. Comes with up-to-date data.
 
 SWR was created by the team behind Vercel and NextJS.
 

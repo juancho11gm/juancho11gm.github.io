@@ -1,3 +1,4 @@
+import slug from 'slug';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactMarkdown from 'react-markdown';
@@ -6,32 +7,20 @@ import remarkGfm from 'remark-gfm';
 import styles from './PostBody.module.css';
 import classNames from 'classnames';
 
-type HeadingProps = {
+type HeadingAnchorProps = {
 	children: ReactNode & ReactNode[];
-	className: string;
+	level: number;
 };
 
-const Heading = ({ className, children }: HeadingProps) => {
-	console.log({ className, children });
-	return <a href={`#`}>{children}</a>;
-};
-
-const generateSlug = (str: string) => {
-	str = str?.replace(/^\s+|\s+$/g, '');
-	str = str?.toLowerCase();
-	const from = 'àáãäâèéëêìíïîòóöôùúüûñç·/_,:;';
-	const to = 'aaaaaeeeeiiiioooouuuunc------';
-
-	for (let i = 0, l = from.length; i < l; i++) {
-		str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-	}
-
-	str = str
-		?.replace(/[^a-z0-9 -]/g, '')
-		.replace(/\s+/g, '-')
-		.replace(/-+/g, '-');
-
-	return str;
+const HeadingAnchor = ({ children, level }: HeadingAnchorProps) => {
+	const [heading] = children;
+	const headingSlug = slug(heading as string);
+	const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
+	return (
+		<HeadingTag id={headingSlug}>
+			<a href={`#${headingSlug}`}>{heading}</a>
+		</HeadingTag>
+	);
 };
 
 type CodeBlockProps = {
@@ -68,25 +57,24 @@ const PostBody = ({ content }: Props) => {
 							className={props.className || ''}
 						/>
 					),
-					h2: (props: any) => {
-						const arr = props.children;
-						let heading = '';
-
-						for (let i = 0; i < arr.length; i++) {
-							if (arr[i]?.type !== undefined) {
-								for (let j = 0; j < arr[i].props.children.length; j++) {
-									heading += arr[i]?.props?.children[0];
-								}
-							} else heading += arr[i];
-						}
-
-						const slug = generateSlug(heading);
-						return (
-							<h3 id={slug}>
-								<a href={`#${slug}`} {...props}></a>
-							</h3>
-						);
-					},
+					h1: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
+					h2: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
+					h3: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
+					h4: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
+					h5: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
+					h6: (props) => (
+						<HeadingAnchor children={props.children} level={props.level} />
+					),
 				}}
 				remarkPlugins={[remarkGfm]}
 			/>
