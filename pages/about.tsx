@@ -36,6 +36,24 @@ const companies: Company[] = [
 				iconUrl: '/assets/logos/virgin-voyages.png',
 				tags: ['TypeScript', 'SCSS', 'Magnolia', 'FTL'],
 			},
+			{
+				name: 'COX 📞',
+				role: 'Full Stack Engineer',
+				description:
+					'Development of a web crawler that analyzes natural language to improve the client engagement funnel.',
+				iconUrl: '/assets/logos/cox.png',
+				tags: [
+					'Vite',
+					'TypeScript',
+					'React',
+					'Tailwind',
+					'Python',
+					'FastAPI',
+					'GPT-3',
+					'Textstat',
+					'BeautifulSoup',
+				],
+			},
 		],
 	},
 	{
