@@ -47,7 +47,7 @@ type Props = {
 
 const PostBody = ({ content }: Props) => {
 	return (
-		<div className={classNames('max-w-2xl mx-auto markdown', styles.markdown)}>
+		<div className={classNames('max-w-3xl mx-auto markdown', styles.markdown)}>
 			<ReactMarkdown
 				children={content}
 				components={{
