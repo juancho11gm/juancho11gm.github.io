@@ -21,7 +21,7 @@ Is recommended to use the Context API when your components, at different nesting
 
 The scenario when the props are passed down through multiple components is usually known as Drop Drilling. It can be solved by using Component Composition (Breaking down Components into smaller and indenpendent pieces) or by adding the Context API.
 
-```js
+```jsx
 // Create the context with a Default Value
 const MyContext = React.createContext(null);
 
@@ -37,7 +37,7 @@ function App() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<MyContext.Provider value={{ count, setCount }}>
+		<MyContext.Provider value={{ state: { count }, setCount }}>
 			<Counter />
 			<MyTextComponent />
 		</MyContext.Provider>
@@ -45,11 +45,11 @@ function App() {
 }
 
 function Counter() {
-	const { count, setCount } = useCustomContext();
+	const { state, setCount } = useCustomContext();
 	return (
 		<div>
-			<button onClick={() => setCount(count + 1)}>+</button>
-			<button onClick={() => setCount(count - 1)}>-</button>
+			<button onClick={() => setCount(state.count + 1)}>+</button>
+			<button onClick={() => setCount(state.count - 1)}>-</button>
 		</div>
 	);
 }
@@ -59,40 +59,97 @@ function MyTextComponent() {
 }
 
 function Text() {
-	const { count } = useCustomContext();
-	return <h1>{count}</h1>;
+	// Use the context in inner componets
+	const { state } = useCustomContext();
+	return <h1>{state.count}</h1>;
 }
 ```
 
 ## What is useReducer
 
-The `useReducer` was introduced by the React team in the v.18. It provides you a way to manage state changes through predefined actions. So it becomes predictable.
+The `useReducer` was introduced by the React team to manage state changes through predefined actions. It can handle complex state updates thorugh predictable opearations.
+Your application data flow will be easier to understand, and you only need to use React hooks.
+
+```jsx
+// The actions become more predictable, and immutability is the key
+// for avoiding side state updates.
+function reducer(state, action) {
+	switch (action.type) {
+		case 'INCREMENT':
+			return { count: state.count + 1 };
+		case 'DECREMENT':
+			return { count: state.count - 1 };
+		default:
+			return state;
+	}
+}
+
+export function ReducerComponent() {
+	// Through the dispatch function the action types are triggered.
+	const [state, dispatch] = useReducer(reducer, { count: 0 });
+	return (
+		<>
+			Count: {state.count}
+			<button onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
+			<button onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+		</>
+	);
+}
+```
 
 ## Use them together
 
 Let's implement a solution with both hooks for a React Application that needs to share the state management through different components.
-Example
+Example with Typescript:
 
-```ts
-// State definition
+```tsx
 export interface AppStateI {
 	count: number;
 }
-
-export interface StateContextPropsI {
+interface ContextProps {
 	state: AppStateI;
-	dispatch: React.Dispatch<ActionI>;
+	dispatch: Dispatch<ActionI>;
 }
 
-export const Context = createContext<StateContextPropsI | null>(null);
+const MyContext = createContext<ContextProps | null>(null);
 
-export const useAppContext = (): StateContextPropsI => {
-	const contextValue = useContext(AppContext);
-	if (contextValue === null) throw Error('Context has not been Provided!');
+export const useCustomContext = (): ContextProps => {
+	const contextValue = useContext(MyContext);
+	if (contextValue === null) {
+		throw Error('Context has not been Provided!');
+	}
 	return contextValue;
 };
+
+function App() {
+	const [state, dispatch] = useReducer(reducer, { count: 0 });
+
+	return (
+		<MyContext.Provider value={{ state, dispatch }}>
+			<Counter />
+		</MyContext.Provider>
+	);
+}
+
+export function Counter() {
+	const { state, dispatch } = useCustomContext();
+	return (
+		<>
+			Count: {state.count}
+			<button onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
+			<button onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+		</>
+	);
+}
 ```
 
 ## Conclusion
 
-- [GitHub Code]().
+By using Reducer and Context API together you will have advantages for maning the app state:
+
+- Easier to understand, maintain and debug.
+- Centralized state management.
+- Reusability and decoupling.
+- Avoid unnecessary renders.
+
+[GitHub Code](https://github.com/juancho11gm/context-reducer).
