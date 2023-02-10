@@ -1,25 +1,25 @@
 ---
-title: 'Use Context and Reducer together'
+title: 'UseContext and UseReducer together'
 excerpt: 'React Context API and useReducer implemented'
-coverImage: '/assets/blog/.jpg'
+coverImage: '/assets/blog/context-reducer/cover.jpg'
 orientation: landscape
 date: '2023-02-05'
 author:
   name: Juan G
   picture: '/assets/me/profilepic.jpg'
 ogImage:
-  url: '/assets/blog/.jpg'
+  url: '/assets/blog/context-reducer/cover.jpg'
 ---
 
 If you are a JavaScript developer probably you've heard about Redux. Managing the state is a frequent use case where JavaScript developers tend to use a library to make it easier.
-Redux is a good alternative when your application becomes much more larger and complex. In the meanwhile, according to the project requirements and constraints, if it stays small and less complex, you can group `useContext` and `useReducer` React Hooks together.
+Redux is a good alternative when your application becomes much more larger and complex. Meanwhile, according to the project requirements and constraints, if it stays small and less complex, you can group **useContext** and **useReducer** React Hooks together.
 
 ## What is Context
 
-The Context API was introduced by the React team for accessing the state from a general context in your components, without passing props down manually.
+The React team introduced the Context API for accessing the state from a general context in your components, without passing props down manually.
 Is recommended to use the Context API when your components, at different nesting levels, need to use a global state.
 
-The scenario when the props are passed down through multiple components is usually known as Drop Drilling. It can be solved by using Component Composition (Breaking down Components into smaller and indenpendent pieces) or by adding the Context API.
+The scenario when the props are passed down through multiple components is usually known as Drop Drilling. It can be solved by using Component Composition (Breaking down Components into smaller and independent pieces) or by adding the Context API.
 
 ```jsx
 // Create the context with a Default Value
@@ -67,7 +67,7 @@ function Text() {
 
 ## What is useReducer
 
-The `useReducer` was introduced by the React team to manage state changes through predefined actions. It can handle complex state updates thorugh predictable opearations.
+The `useReducer` was introduced by the React team to manage state changes through predefined actions. It can handle complex state updates through predictable operations.
 Your application data flow will be easier to understand, and you only need to use React hooks.
 
 ```jsx
@@ -145,7 +145,7 @@ export function Counter() {
 
 ## Conclusion
 
-By using Reducer and Context API together you will have advantages for maning the app state:
+By using Reducer and Context API together you will have advantages for managing the app state:
 
 - Easier to understand, maintain and debug.
 - Centralized state management.
