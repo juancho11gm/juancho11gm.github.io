@@ -67,8 +67,13 @@ function Text() {
 
 ## What is useReducer
 
+<<<<<<< HEAD
 The **useReducer** was introduced by the React team to manage state changes through predefined actions. It can handle complex state updates through predictable operations.
-Your application data flow will be easier to understand, and you only need to use React hooks.
+=======
+The `useReducer` was introduced by the React team to manage state changes through predefined actions. It can handle complex state updates through predictable operations.
+
+> > > > > > > feat/context-redux
+> > > > > > > Your application data flow will be easier to understand, and you only need to use React hooks.
 
 ```jsx
 // The actions become more predictable, and immutability is the key
