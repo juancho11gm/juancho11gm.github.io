@@ -33,8 +33,8 @@ const Navbar = () => {
 			<header className='relative flex justify-between items-center pt-8'>
 				<nav className='flex items-center md:block'>
 					<NavLink href='/' text='Home' />
+					<NavLink href='/projects' text='Projects' />
 					<NavLink href='/about' text='About' />
-					<NavLink href='/books' text='Books' />
 					<MobileMenu />
 				</nav>
 				<ThemeToggle />

@@ -40,8 +40,8 @@ I'm Juan González, a colombian web developer with almost 4 years of experience.
 - Traveling 🌎: I love to travel whenever possible. [(Check our tiktok account)](https://www.tiktok.com/@quiro.gon).
 - Practicing sports ⚽️: I like to do exercise and play almost whatever sport that involves a ball 😹.
 
-![With Midudev in PlatziConf 2022](/assets/blog/who-am-i/platzi-conf.jpg)
-_With Midudev in PlatziConf 2022._
+![With Midudev at PlatziConf 2022](/assets/blog/who-am-i/platzi-conf.jpg)
+_With Midudev at PlatziConf 2022._
 
 This 2022 has been an amazing year where I had to adapt to new environments in in every respect, so many learnings to highlight. So I'll be sharing my experiences in the areas described above.
 

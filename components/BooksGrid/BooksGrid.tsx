@@ -1,4 +1,6 @@
 import { Book } from '@components/Book/Book';
+import { CoverImage } from '@components/CoverImage/CoverImage';
+import { PostTitle } from '@components/PostTitle/PostTitle';
 import { SectionTitle } from '@components/SectionTitle/SectionTitle';
 import { BookType } from '@interfaces/book';
 
@@ -21,8 +23,19 @@ export const BooksGrid = ({ books }: { books: BookType[] }) => {
 
 	return (
 		<section className='my-8'>
-			<SectionTitle text='Recommended Books.' />
-			<p className='my-4 md:my-8'>
+			<PostTitle>Share Your Book</PostTitle>
+			<CoverImage
+				orientation={'landscape'}
+				title={'Share your Book'}
+				src={'/assets/books/share-your-book.jpg'}
+				className='m-auto'
+			/>
+			<p className='mt-4 md:mt-8'></p>
+			<p>
+				We like to talk about personal growth, finance, economics and
+				biographies.
+			</p>
+			<p className='mb-4 md:mb-8'>
 				What should you read next?. Here you will find some books you should
 				consider.
 			</p>

@@ -24,7 +24,7 @@ const companies: Company[] = [
 					'GSAP',
 					'SCSS',
 					'Jest',
-					'RTL',
+					'Testing Library',
 					'Puppeteer',
 				],
 			},
@@ -52,6 +52,7 @@ const companies: Company[] = [
 					'GPT-3',
 					'Textstat',
 					'BeautifulSoup',
+					'AWS - EC2',
 				],
 			},
 		],
@@ -112,11 +113,6 @@ export default function About() {
 				<Container>
 					<OverviewCard />
 					<AboutCard companies={companies} />
-					<p className='my-4'>
-						Beyond coding, in my free time I read 📚, travel 🛩 and do exercise
-						🏋🏻‍♂️. I'm planning to create a new page to talk about places I visit,
-						but that is WIP 🚧.
-					</p>
 				</Container>
 			</Layout>
 		</>

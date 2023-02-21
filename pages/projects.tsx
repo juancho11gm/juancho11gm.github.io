@@ -3,6 +3,111 @@ import { Container } from '@components/Container/Container';
 import { BooksGrid } from '@components/BooksGrid/BooksGrid';
 import { Layout } from '@components/Layout/Layout';
 import { SectionTitle } from '@components/SectionTitle/SectionTitle';
+import Link from 'next/link';
+
+const projects = [
+	{
+		title: 'juango.dev',
+		description: 'The website you are using was created with NextJS.',
+		url: 'https://github.com/juancho11gm/juancho11gm.github.io',
+	},
+	{
+		title: 'pushdev',
+		description: 'Web development bootcamps for beginners.',
+		url: 'https://github.com/pushdev-code',
+	},
+	{
+		title: 'Worki',
+		description:
+			'Web and mobile app for finding job opportunities (Flutter + SpringBoot).',
+		url: 'https://github.com/juancho11gm/worki',
+	},
+	{
+		title: 'Movies App',
+		description: 'Check the current movies with this app created with Flutter.',
+		url: 'https://github.com/juancho11gm/flutter-projects/tree/master/flutter_vscode',
+	},
+	{
+		title: 'Same Game robot automation',
+		description: 'This Robot solves the Same Game boards.',
+		url: 'https://github.com/juancho11gm/same-game',
+	},
+	{
+		title: 'Deploy your first website',
+		description:
+			'Deploy your first website with Firebase. We are going to use Firebase, Travis, Nodejs and GoDaddy like tech tool.',
+		url: 'https://github.com/juancho11gm/deploy-website',
+	},
+	{
+		title: 'JavaScript Design Patterns',
+		description: 'JavaScript Design Patterns implementations.',
+		url: 'https://github.com/juancho11gm/design-patterns-js',
+	},
+	{
+		title: 'Trello',
+		description: 'Trello Clone created with React and TypeScript.',
+		url: 'https://github.com/juancho11gm/Trello',
+	},
+	{
+		title: 'Star+',
+		description: 'Star+ website clone with NextJS.',
+		url: 'https://github.com/juancho11gm/star-plus',
+	},
+	{
+		title: 'AdventJS',
+		description: 'AdventJS Solutions (2021 and 2022).',
+		url: 'https://github.com/juancho11gm/adventjs',
+	},
+	{
+		title: 'Naval Battle',
+		description: 'Naval Battle arcade game development with C++.',
+		url: 'https://github.com/juancho11gm/basic-algorithms',
+	},
+	{
+		title: 'JaveCoin',
+		description:
+			'PHP Banking portal that uses a virtual currency called JaveCoin.',
+		url: 'https://github.com/juancho11gm/php-project',
+	},
+	{
+		title: 'Distributed Systems',
+		description:
+			'File management, concurrency control, transactional management and recovery from failures by using Java.',
+		url: 'https://github.com/juancho11gm/distributed-systems-II',
+	},
+	{
+		title: 'Operating Systems',
+		description: 'Minishell development with C.',
+		url: 'https://github.com/juancho11gm/operating-systems',
+	},
+	{
+		title: 'Space X Launches',
+		description:
+			'Use NextJS and GraphQL for fetching and rendering the latests Space X launches.',
+		url: 'https://github.com/juancho11gm/spacex-launches',
+	},
+	{
+		title: 'Pokedex',
+		description: 'Fetch Pokemon data through React Redux and React Router.',
+		url: 'https://github.com/juancho11gm/pokedux',
+	},
+	{
+		title: 'Game Development with Assembly',
+		description: 'Concentration Game developed with Assembly.',
+		url: 'https://github.com/juancho11gm/assembly-project',
+	},
+	{
+		title: 'Web Services',
+		description:
+			'Create and use SOAP and REST web services for Ecological Tourism Plans (Angular + SpringBoot).',
+		url: 'https://github.com/juancho11gm/ecco-web-services',
+	},
+	{
+		title: 'Get Domain data',
+		description: 'Get domain metadata through a Vue frontend and a GO backend.',
+		url: 'https://github.com/juancho11gm/go-challenge',
+	},
+];
 
 export default function Projects() {
 	return (
@@ -19,8 +124,26 @@ export default function Projects() {
 				<Container>
 					<section className='my-8'>
 						<SectionTitle text='Projects.' />
-						<div className='h-40 flex items-center justify-center'>
-							Work In Progress 🚧...
+						<div className='my-4 md:my-8'>
+							<p>
+								This is a list of side projects I use for learning and
+								practicing new tech stuff.
+							</p>
+							<ul className='my-4 md:my-8 px-4'>
+								{projects.map((project) => (
+									<li key={project.title} className='list-disc my-2'>
+										<h2>
+											<Link
+												href={project.url}
+												className='text-purple-500 underline hover:underline'
+											>
+												{project.title}
+											</Link>
+										</h2>
+										<p>{project.description}</p>
+									</li>
+								))}
+							</ul>
 						</div>
 					</section>
 				</Container>
