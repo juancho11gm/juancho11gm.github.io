@@ -24,7 +24,7 @@ export default function Index({ allPosts }: BlogProps) {
 					<Link href='/about' className='underline mb-12 mt-6 block'>
 						Read about me.
 					</Link>
-					<SectionTitle text='Blog.' />
+					<SectionTitle text='Blog.' level={2} />
 					<Blog allPosts={allPosts} />
 				</Container>
 			</Layout>

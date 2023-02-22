@@ -4,6 +4,7 @@ import { PostTitle } from '@components/PostTitle/PostTitle';
 import { Avatar } from '@components/Avatar/avatar';
 import { OrientationType } from '@interfaces/post';
 import { Author } from '@interfaces/author';
+import Link from 'next/link';
 
 type Props = {
 	title: string;
@@ -26,7 +27,9 @@ const PostHeader = ({
 			<div className='mb-6 sm:mb-12 flex justify-center'>
 				<Avatar name={author.name} picture={author.picture} />
 				<div className='ml-2'>
-					<div className='text-xl font-bold'>{author.name}</div>
+					<Link href={'/about'}>
+						<div className='text-xl font-bold'>{author.name}</div>
+					</Link>
 					<DateFormatter dateString={date} />
 				</div>
 			</div>

@@ -59,7 +59,10 @@ const ThemeToggle = () => {
 			<div className='h-full w-1/2 absolute p-1' ref={decorationRef}>
 				<div className='h-full w-full dark:bg-purple-700 bg-gray-50 rounded-3xl'></div>
 			</div>
-			<button className='flex items-center justify-center w-1/2 h-full z-10'>
+			<button
+				aria-label='toggle light theme'
+				className='flex items-center justify-center w-1/2 h-full z-10'
+			>
 				<svg
 					width={18}
 					height={18}
@@ -71,7 +74,10 @@ const ThemeToggle = () => {
 					<SunIcon />
 				</svg>
 			</button>
-			<button className='flex items-center justify-center w-1/2 h-full z-10'>
+			<button
+				aria-label='toggle dark theme'
+				className='flex items-center justify-center w-1/2 h-full z-10'
+			>
 				<svg
 					width={18}
 					height={18}

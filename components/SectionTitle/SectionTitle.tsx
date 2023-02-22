@@ -1,8 +1,14 @@
-const SectionTitle = ({ text }: { text: string }) => {
+interface SectionTitleProps {
+	text: string;
+	level?: string | number;
+}
+
+const SectionTitle = ({ text, level = '1' }: SectionTitleProps) => {
+	const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
 	return (
-		<h1 className='text-5xl md:text-5xl font-bold tracking-tighter leading-tight md:pr-8'>
+		<HeadingTag className='text-5xl md:text-5xl font-bold tracking-tighter leading-tight md:pr-8'>
 			{text}
-		</h1>
+		</HeadingTag>
 	);
 };
 
