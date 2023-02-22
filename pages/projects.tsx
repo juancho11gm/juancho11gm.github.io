@@ -66,7 +66,7 @@ const projects = [
 	{
 		title: 'JaveCoin',
 		description:
-			'PHP Banking portal that uses a virtual currency called JaveCoin.',
+			'Banking portal where the clients manage a virtual currency called JaveCoin. The project was developed using PHP and MySQL.',
 		url: 'https://github.com/juancho11gm/php-project',
 	},
 	{
@@ -97,15 +97,27 @@ const projects = [
 		url: 'https://github.com/juancho11gm/assembly-project',
 	},
 	{
+		title: 'Moramia',
+		description:
+			'Project carried out with PushDev and its students. The goal was to build a website with a shopping cart using JavaScript, HTML, SCSS, NodeJS, MongoDB, and Google Cloud.',
+		url: 'https://github.com/pushdev-code/moramia-website',
+	},
+	{
 		title: 'Web Services',
 		description:
-			'Create and use SOAP and REST web services for Ecological Tourism Plans (Angular + SpringBoot).',
+			'Project carried out in the Web Services subject. It was developed using SOAP and REST for the publication of hotels, transportation, and food services. The backend was developed with Django and Frontend with Angular.',
 		url: 'https://github.com/juancho11gm/ecco-web-services',
 	},
 	{
 		title: 'Get Domain data',
 		description: 'Get domain metadata through a Vue frontend and a GO backend.',
 		url: 'https://github.com/juancho11gm/go-challenge',
+	},
+	{
+		title: 'Healthy Routine',
+		description:
+			'The application is focused on the publication of healthy diets and routines. It was developed using the SCRUM methodology. The tech tools were Ionic and Firebase.',
+		url: 'https://github.com/juancho11gm/healthy-routine',
 	},
 ];
 
