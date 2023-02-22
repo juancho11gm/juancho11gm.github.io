@@ -34,12 +34,12 @@ const NavList = () => {
 	return (
 		<ul
 			className={classNames(
-				'visible md:hidden top-full w-full h-screen absolute bg-grey-50s pl-1 pt-8 bg-gray-50 dark:bg-gray-900 z-10'
+				'visible md:hidden top-full w-full h-screen absolute bg-grey-50s pl-1 pt-8 bg-gray-50 dark:bg-gray-900 z-10 overflow-hidden'
 			)}
 		>
 			<NavLink href='/' text='Home' />
+			<NavLink href='/projects' text='Projects' />
 			<NavLink href='/about' text='About' />
-			<NavLink href='/books' text='Books' />
 		</ul>
 	);
 };
