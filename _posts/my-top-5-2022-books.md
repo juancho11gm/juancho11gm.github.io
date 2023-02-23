@@ -1,5 +1,5 @@
 ---
-title: 'My top 5 2022 books'
+title: 'My top 5 books in 2022'
 excerpt: 'These are the most outstanding books I read in 2022'
 coverImage: '/assets/blog/my-top-5-2022-books/cover.jpg'
 orientation: landscape
