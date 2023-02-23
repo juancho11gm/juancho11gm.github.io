@@ -1,14 +1,14 @@
 ---
 title: 'My top 5 books in 2022'
 excerpt: 'These are the most outstanding books I read in 2022'
-coverImage: '/assets/blog/my-top-5-2022-books/cover.jpg'
+coverImage: '/assets/blog/top-5-2022-books/cover.jpg'
 orientation: landscape
 date: '2023-02-22'
 author:
   name: Juan G
   picture: '/assets/me/profilepic.jpg'
 ogImage:
-  url: '/assets/blog/my-top-5-2022-books/cover.jpg'
+  url: '/assets/blog/top-5-2022-books/cover.jpg'
 ---
 
 2022 was a very important year in my personal and professional life. I started learning about new topics related with finances, self growth, soft skills and so on.
