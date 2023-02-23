@@ -25,8 +25,8 @@ Written by James Clear.
 
 Categories : 🪴 Personal Growth, 📆 Habits and 🧠 Psychology.
 
-- _"Your habits shape your identity, and your identity shapes your habits."_
-- _"Habits are the compound interest of self-improvement."_
+_"Your habits shape your identity, and your identity shapes your habits."_
+_"Habits are the compound interest of self-improvement."_
 
 I am a faithful believer that small joint actions make the difference over time. These small and apparently insignificant actions can transform your life, for better or worse. You are the one who decides what you do and when you do it, and by making or not decisions you are determining your life.
 
@@ -46,8 +46,8 @@ Written by Morgan Housel.
 
 Categories : 🪴 Personal Growth, 🐷 Finance, 🧠 Psychology.
 
-- _"Controlling your time is the highest dividend money pays."_
-- _"Your personal experiences with money make up maybe 0.00000001% of what’s happened in the world, but maybe 80% of how you think the world works."_
+_"Controlling your time is the highest dividend money pays."_
+_"Your personal experiences with money make up maybe 0.00000001% of what’s happened in the world, but maybe 80% of how you think the world works."_
 
 Doing well with money isn’t necessarily about what you know. It’s about how you behave. In a beginning, for me, that was hard to understand, but when you analyze how people in your context see and react to money, you will get it. And it makes a lot of sense.
 
@@ -69,8 +69,8 @@ Written by Chris Voss.
 
 Categories : 🪴 Personal Growth, 🤝 Negotiation, 🧠 Psychology.
 
-- _"Negotiation is not an act of battle; it’s a process of discovery. The goal is to uncover as much information as possible."_
-- _"The beauty of empathy is that it doesn’t demand that you agree with the other person’s ideas."_
+_"Negotiation is not an act of battle; it’s a process of discovery. The goal is to uncover as much information as possible."_
+_"The beauty of empathy is that it doesn’t demand that you agree with the other person’s ideas."_
 
 I'm not very good at negotiating, but this book showed me some tips that I'll use when selling an idea, convincing someone, bargaining, or asking for a salary increase. And I'll have an advantage over my speaker.
 
@@ -88,8 +88,8 @@ Written by George S. Clason.
 
 Categories : 🪴 Personal Growth, 🐷 Finance.
 
-- _"Where the determination is, the way can be found."_
-- _"Wealth, like a tree, grows from a tiny seed. The first copper you save is the seed from which your tree of wealth shall grow. The sooner you plant that seed the sooner shall the tree grow."_
+_"Where the determination is, the way can be found."_
+_"Wealth, like a tree, grows from a tiny seed. The first copper you save is the seed from which your tree of wealth shall grow. The sooner you plant that seed the sooner shall the tree grow."_
 
 This book is a precious piece of Babylonian culture. Incredibly, the same principles that bring you financial well-being today were used by ancient Babylon thousands of years ago. Money and finances have the same meaning that six thousand years ago.
 
@@ -113,8 +113,8 @@ Written by Jeff Bezos and Walter Isaacson.
 
 Categories : 💆🏻‍♂️ Autobiography, 📊 Entrepreneurship.
 
-- _"Most of the regret will come from the things we didn't try."_
-- _"When something bad happens to you you have three choices, let it define you, let it destroy you, or let it make you stronger."_
+_"Most of the regret will come from the things we didn't try."_
+_"When something bad happens to you you have three choices, let it define you, let it destroy you, or let it make you stronger."_
 
 No matter if you have disagreements about Jeff Bezos, you will learn the importance of the long-term and the mindset of being better every day.
 
@@ -133,8 +133,8 @@ Written by Danilo Raymond.
 
 Categories : 🪴 Personal Growth, 🐷 Finance.
 
-- _"Insanity is doing the same thing over and over and expecting different results."_ Albert Einstein.
-- _"The financial practices we have were co-opted into our subconscious."_
+_"Insanity is doing the same thing over and over and expecting different results."_ Albert Einstein.
+_"The financial practices we have were co-opted into our subconscious."_
 
 Danilo shares tips for financial success through stories. These stories talk about borrowing, saving, investing, and spending.
 Very recommended, it is more practical and goes directly to the numbers.
@@ -143,4 +143,4 @@ One reflection that caught my attention is why Latin America has all the possibi
 
 [Buy it](https://www.planetadelibros.com.co/libro-lo-que-debes-saber-del-dinero-y-nunca-te-ensenaron-nueva-edicion/352267).
 
-Preview Photo taken from [Tom Hermans](https://unsplash.com/es/fotos/9BoqXzEeQqM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Preview Photo taken from [Aaron Burden](https://unsplash.com/es/fotos/QJDzYT_K8Xg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
