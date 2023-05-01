@@ -55,6 +55,13 @@ const companies: Company[] = [
 					'AWS - EC2',
 				],
 			},
+			{
+				name: 'Internal',
+				role: 'Full Stack Engineer',
+				description: 'Development of a data product (confidential).',
+				iconUrl: '/assets/logos/huge.jpg',
+				tags: ['TypeScript', 'NextJS', 'Tailwind', 'Jest', 'Cypress', 'NestJS'],
+			},
 		],
 	},
 	{
