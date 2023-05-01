@@ -13,6 +13,9 @@ const Footer = () => {
 					<Link href='/projects'>Projects</Link>
 					<Link href='/about'>About</Link>
 					<Link href='https://github.com/juancho11gm'>GitHub</Link>
+					<Link href='https://www.linkedin.com/in/juansebastiangonzalezm'>
+						LinkedIn
+					</Link>
 				</div>
 			</Container>
 		</footer>
