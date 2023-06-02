@@ -1,6 +1,6 @@
 ---
 title: 'Immutability in JavaScript'
-excerpt: 'Why should we use immutability when coding.'
+excerpt: 'Why should we use immutability when coding'
 coverImage: '/assets/blog/immutability/cover.jpg'
 orientation: square
 date: '2023-05-01'
@@ -8,53 +8,19 @@ author:
   name: Juan G
   picture: '/assets/me/profilepic.jpg'
 ogImage:
-  url: ''
+  url: '/assets/blog/immutability/cover.jpg'
 ---
 
-## What is Mutability and Immutability
+## What are Mutability and Immutability
 
-In JavaScript, objects and arrays are mutable by default but the primitive values are immutable. But what does that means?
+In JavaScript, objects and arrays are mutable by default but the primitive values are immutable. But what does that mean?
 
-Immutability refers to the object properties that cannot be changed once it has been created. If you want to change its content, you should create an entirely new value. Let's check some code snippets.
-
-```js
-// Primitive values are immutable
-let x = 10;
-let y = x;
-y = 20;
-console.log(x); // 10
-console.log(y); // 20
-```
-
-```js
-// Objects are mutable
-let x = {
-	name: 'Juan',
-	address: {
-		country: '🇨🇴',
-		city: 'Bogotá',
-	},
-};
-let y = x;
-y.country.city = 'Medellín';
-console.log(x); // { name: 'Sebas', address: { country: '🇨🇴', city: 'Medellín' } }
-console.log(y); // { name: 'Sebas', address: { country: '🇨🇴', city: 'Medellín' } }
-```
-
-```js
-// Arrays are mutable
-let x = [1, 2, 3, 4];
-let y = x;
-y.[0] = 5;
-console.log(x); // [5, 2, 3, 4]
-console.log(y); // [5, 2, 3, 4]
-```
-
-Immutability allows to ensure that the data remains consistent. The state changes of other modules should not affect unrelated data. When working with Arrays and Objects is our responsability to avoid unexpected side effects.
+Immutability refers to the object's properties that cannot be changed once it has been created. If you want to change its content, you should create an entirely new value. Let's check some code snippets.
+Immutability allows us to ensure that the data remains consistent. The state changes of other modules should not affect unrelated data. When working with Arrays and Objects is our responsibility to avoid unexpected side effects.
 
 ## How to solve it
 
-There are several ways to implement immutability in JavaScript, but you will have trade offs when selecting each one of these options. That selection will depend on the use case.
+There are several ways to implement immutability in JavaScript, but you will have trade-offs when selecting each one of these options. That selection will depend on the use case.
 
 **Object.freeze()**
 
@@ -89,7 +55,7 @@ console.log(originalObject); // { a: 1, b: 2 }
 console.log(newObject); // { a: 1, b: 3 }
 ```
 
-Object.assign creates a shallow copy, it means that does not provide a deep copy of nested objects, so the changes made to the nested object will still be reflected in both the original and copied object.
+Object.assign creates a shallow copy, which means that does not provide a deep copy of nested objects, so the changes made to the nested object will still be reflected in both the original and copied object.
 
 **Spread Operator**
 

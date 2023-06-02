@@ -5,7 +5,7 @@ const AboutCard = ({ companies }: { companies: Company[] }) => {
 	return (
 		<section>
 			<p>
-				I'm a Web Developer with 4 years of expertise. As a self-taught
+				I&apos;m a Web Developer with 4 years of expertise. As a self-taught
 				individual contributor, I bring a proactive and innovative approach to
 				every project, from inception to completion.
 			</p>
@@ -27,8 +27,8 @@ const AboutCard = ({ companies }: { companies: Company[] }) => {
 				My passion for reading and learning about finance, investing, and
 				personal growth keeps me up-to-date with industry trends and fuels my
 				drive to innovate and excel. In my free time, I love to read about
-				finance, investing, and personal growth. Also, I'm part of a book club
-				called <strong> Share Your Book</strong>.
+				finance, investing, and personal growth. Also, I&apos;m part of a book
+				club called <strong> Share Your Book</strong>.
 			</p>
 			<h2 className='font-bold text-2xl mt-6 mb-4 sm:text-3xl '>Career Path</h2>
 			<ul>

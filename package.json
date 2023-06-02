@@ -4,7 +4,9 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"typecheck": "tsc"
+		"typecheck": "tsc",
+		"lint": "next lint",
+		"format": "prettier --write ."
 	},
 	"dependencies": {
 		"@next/bundle-analyzer": "^13.0.6",
@@ -14,6 +16,7 @@
 		"gsap": "^3.11.3",
 		"next": "latest",
 		"next-themes": "^0.2.1",
+		"prettier": "^2.8.8",
 		"query-string": "^8.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -34,6 +37,9 @@
 		"@types/react-syntax-highlighter": "^15.5.6",
 		"@types/slug": "^5.0.3",
 		"autoprefixer": "^10.4.7",
+		"eslint": "8.41.0",
+		"eslint-config-next": "13.4.4",
+		"eslint-config-prettier": "^8.8.0",
 		"postcss": "^8.4.14",
 		"tailwindcss": "^3.1.4"
 	}

@@ -33,6 +33,7 @@ const CodeBlock = ({ className, children }: CodeBlockProps) => {
 	return (
 		<div className='code-block'>
 			<SyntaxHighlighter
+				// eslint-disable-next-line react/no-children-prop
 				children={String(children).replace(/\n$/, '')}
 				style={vscDarkPlus}
 				language={match?.[1]}
@@ -49,30 +50,38 @@ const PostBody = ({ content }: Props) => {
 	return (
 		<div className={classNames('max-w-3xl mx-auto markdown', styles.markdown)}>
 			<ReactMarkdown
+				// eslint-disable-next-line react/no-children-prop
 				children={content}
 				components={{
 					code: (props) => (
 						<CodeBlock
+							// eslint-disable-next-line react/no-children-prop
 							children={props.children}
 							className={props.className || ''}
 						/>
 					),
 					h1: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 					h2: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 					h3: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 					h4: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 					h5: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 					h6: (props) => (
+						// eslint-disable-next-line react/no-children-prop
 						<HeadingAnchor children={props.children} level={props.level} />
 					),
 				}}

@@ -1,0 +1,10 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+/packages
+.next
+node_modules
+public
+apps/web-app/with-nx.js
+apps/web-app/animations/live_login_animation.json
