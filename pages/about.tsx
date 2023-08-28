@@ -58,7 +58,7 @@ const companies: Company[] = [
 			{
 				name: 'Internal',
 				role: 'Full Stack Engineer',
-				description: 'Development of a data product (confidential).',
+				description: 'Building of data products powered by AI tools: LIVE.',
 				iconUrl: '/assets/logos/huge.jpg',
 				tags: ['TypeScript', 'NextJS', 'Tailwind', 'Jest', 'Cypress', 'NestJS'],
 			},
