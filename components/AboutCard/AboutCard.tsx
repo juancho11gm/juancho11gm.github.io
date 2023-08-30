@@ -5,30 +5,30 @@ const AboutCard = ({ companies }: { companies: Company[] }) => {
 	return (
 		<section>
 			<p>
-				I&apos;m a Web Developer with 4 years of expertise. As a self-taught
-				individual contributor, I bring a proactive and innovative approach to
-				every project, from inception to completion.
+				I’m a passionate Software Developer with over 5 years of experience
+				using Web Development technologies. I’m a strong team player and a
+				self-taught individual contributor. I bring proactive and innovative
+				initiatives from inception to completion.
 			</p>
 			<p className='mt-2 sm:mt-6'>
-				My track record of successfully leading web development projects in
-				diverse industries, from online advertising to education, showcases my
-				ability to adapt to new environments and technologies. I take ownership
-				of the projects I work on and consistently seek out cutting-edge
-				solutions and the best engineering practices, following design patterns
-				and methodologies to deliver exceptional results.
+				I have led successful software projects in various sectors, from online
+				advertising to the education area. I have the ability to adapt to new
+				environments and technologies easily and quickly. I take ownership of
+				the projects I work on and consistently seek out cutting-edge solutions
+				and the best engineering practices, following design patterns and
+				methodologies to deliver exceptional results.
 			</p>
 			<p className='mt-2 sm:mt-6'>
 				I am a result-oriented developer who thrives in a collaborative
 				environment, fostering a high level of team spirit, accountability, and
-				problem-solving skills.
+				problem-solving skills. I am committed to teaching and mentoring
+				teammates.
 			</p>
 
 			<p className='mt-2 sm:mt-6'>
 				My passion for reading and learning about finance, investing, and
 				personal growth keeps me up-to-date with industry trends and fuels my
-				drive to innovate and excel. In my free time, I love to read about
-				finance, investing, and personal growth. Also, I&apos;m part of a book
-				club called <strong> Share Your Book</strong>.
+				drive to innovate and excel.
 			</p>
 			<h2 className='font-bold text-2xl mt-6 mb-4 sm:text-3xl '>Career Path</h2>
 			<ul>
