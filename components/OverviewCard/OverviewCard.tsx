@@ -36,10 +36,10 @@ const OverviewCard = () => {
 					<strong>Web Engineer</strong> at{' '}
 					<Link
 						className='text-purple-500'
-						href='https://www.hugeinc.com/'
+						href='https://kinesso.com'
 						target='_blank'
 					>
-						HugeInc
+						Kinesso
 					</Link>
 					.
 				</p>
