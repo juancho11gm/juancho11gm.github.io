@@ -26,7 +26,7 @@ const AboutCard = ({ companies }: { companies: Company[] }) => {
 			</p>
 
 			<p className='mt-2 sm:mt-6'>
-				My passion for reading and learning about finance, investing, and
+				My passion for reading and learning about AI, programming, and
 				personal growth keeps me up-to-date with industry trends and fuels my
 				drive to innovate and excel.
 			</p>

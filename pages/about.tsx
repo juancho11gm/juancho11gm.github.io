@@ -7,67 +7,93 @@ import { Layout } from '@components/Layout/Layout';
 
 const companies: Company[] = [
 	{
-		name: 'HugeInc',
+		name: 'Kinesso',
 		type: 'Full-time - Remote',
+		startDate: 'Jul/2024',
+		iconUrl: '/assets/logos/kinesso.webp',
+		href: 'https://kinesso.com/',
+		projects: [
+			{
+				name: 'Interact 🤖',
+				role: 'Senior FullStack Web Engineer',
+				description: `Internal SaaS development for IPG agencies powered by AI tools.`,
+				iconUrl:  '/assets/logos/interact.jpeg',
+				tags: [
+					'Turbo',
+					'TypeScript',
+					'NextJS',
+					'NestJS',
+					'Docker',
+					'Github Actions',
+					'Terraform',
+					'GCP'
+				],
+			},
+		],
+	},
+	{
+		name: 'HugeInc',
+		type: 'Full-time - On-site',
 		startDate: 'Aug/2020',
 		iconUrl: '/assets/logos/huge.jpg',
 		href: 'https://www.hugeinc.com',
 		projects: [
-			{
-				name: 'Stellantis 🏎',
-				role: 'Web Engineer',
-				description: `Business and technical development of advertising units for the major automotive brands in the Stellantis' The advertising pieces were seen by millions of users worldwide.`,
-				iconUrl: '/assets/logos/stellantis.png',
-				tags: [
-					'JavaScript',
-					'React',
-					'GSAP',
-					'SCSS',
-					'Jest',
-					'Testing Library',
-					'Puppeteer',
-				],
-			},
-			{
-				name: 'Virgin Voyages 🛳',
-				role: 'Web Engineer',
-				description:
-					'Development of the frontend components for the Content Management System to raise the customer conversion rate.',
-				iconUrl: '/assets/logos/virgin-voyages.png',
-				tags: ['TypeScript', 'SCSS', 'Magnolia', 'FTL'],
-			},
-			{
-				name: 'COX 📞',
-				role: 'Full Stack Engineer',
-				description:
-					'Development of a web crawler that analyzes natural language to improve the client engagement funnel.',
-				iconUrl: '/assets/logos/cox.png',
-				tags: [
-					'Vite',
-					'TypeScript',
-					'React',
-					'Tailwind',
-					'Python',
-					'FastAPI',
-					'GPT-3',
-					'Textstat',
-					'BeautifulSoup',
-					'AWS - EC2',
-				],
-			},
-			{
-				name: 'Internal',
-				role: 'Full Stack Engineer',
-				description: 'Building of data products powered by AI tools: LIVE.',
-				iconUrl: '/assets/logos/huge.jpg',
-				tags: ['TypeScript', 'NextJS', 'Tailwind', 'Jest', 'Cypress', 'NestJS'],
-			},
-		],
+		{
+			name: 'Internal SaaS development ⚗️',
+			role: 'Senior Full Stack Engineer',
+			description: 'Building of data products powered by AI tools: LIVE.',
+			iconUrl: '/assets/logos/huge.jpg',
+			tags: ['TypeScript', 'NextJS', 'Tailwind', 'Jest', 'Cypress', 'NestJS'],
+		},
+		{
+			name: 'COX 📞',
+			role: 'Full Stack Engineer',
+			description:
+				'Development of a web crawler that analyzes natural language to improve the client engagement funnel.',
+			iconUrl: '/assets/logos/cox.png',
+			tags: [
+				'Vite',
+				'TypeScript',
+				'React',
+				'Tailwind',
+				'Python',
+				'FastAPI',
+				'GPT-3',
+				'Textstat',
+				'BeautifulSoup',
+				'AWS - EC2',
+			],
+		},
+		{
+			name: 'Virgin Voyages 🛳',
+			role: 'Web Engineer',
+			description:
+				'Development of the frontend components for the Content Management System to raise the customer conversion rate.',
+			iconUrl: '/assets/logos/virgin-voyages.png',
+			tags: ['TypeScript', 'SCSS', 'Magnolia', 'FTL'],
+		},
+		{
+			name: 'Stellantis 🏎',
+			role: 'Web Engineer',
+			description: `Business and technical development of advertising units for the major automotive brands in the Stellantis' The advertising pieces were seen by millions of users worldwide.`,
+			iconUrl: '/assets/logos/stellantis.png',
+			tags: [
+				'JavaScript',
+				'React',
+				'GSAP',
+				'SCSS',
+				'Jest',
+				'Testing Library',
+				'Puppeteer',
+			],
+		}
+	],
 	},
 	{
 		name: 'PushDev',
 		type: 'Part-time - Remote',
 		startDate: 'Nov/2019',
+		endDate: 'Nov/2022',
 		iconUrl: '/assets/logos/pushdev.jpg',
 		href: 'https://github.com/pushdev-code',
 		projects: [

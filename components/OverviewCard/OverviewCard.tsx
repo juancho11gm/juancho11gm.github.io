@@ -14,7 +14,7 @@ const OverviewCard = () => {
 			>
 				<Image
 					alt='Juan Gonzalez'
-					src='/assets/me/profilepic.jpg'
+					src='/assets/me/pic.png'
 					priority
 					className='hover:scale-105 transition-transform duration-700'
 					fill
@@ -44,10 +44,10 @@ const OverviewCard = () => {
 					.
 				</p>
 				<p className='mt-4 text-lg sm:mt-6'>
-					JavaScript, React and NextJS enthusiast.
+					JavaScript and AI enthusiast.
 				</p>
 				<p className='text-gray-700 dark:text-gray-300 text-lg'>
-					Learning everyday about tech, personal growth and finance.
+					Learning everyday about tech and personal growth.
 				</p>
 			</div>
 		</section>
