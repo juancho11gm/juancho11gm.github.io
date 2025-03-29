@@ -1,32 +1,34 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import classNames from 'classnames';
-import styles from './OverviewCard.module.css';
 
 const OverviewCard = () => {
 	return (
-		<section className='flex flex-col items-center sm:flex-row my-4'>
-			<div
-				className={classNames(
-					styles.image,
-					'rounded-full overflow-hidden relative flex items-center shrink-0'
-				)}
-			>
+		<section className='flex flex-col my-8'>
+			<div className='relative inline-block mx-auto'>
+				<div className='w-[200px] h-[200px] rounded-[50%] bg-neutral-900' />
 				<Image
-					alt='Juan Gonzalez'
-					src='/assets/me/pic.png'
-					priority
-					className='hover:scale-105 transition-transform duration-700'
-					fill
-					sizes='100%'
+					src='/assets/me/fotopic.png'
+					className='absolute z-[1] bottom-0 left-0'
+					width={200}
+					height={200}
+					alt='Juan González'
+				/>
+				<div
+					className='absolute z-[2] left-0 top-[100px] w-[200px] h-[200px]'
+					style={{
+						backgroundImage:
+							'radial-gradient(circle closest-corner at 50% 0%, transparent 0, transparent 100px, #000 101px, #000 102px)',
+					}}
 				/>
 			</div>
-			<div className='self-start ml-0 sm:ml-8 md:ml-12'>
-				<h1 className='text-center font-bold text-3xl mt-4 sm:text-5xl sm:text-left'>
+
+			<div className='mx-auto z-[2] text-center'>
+				<h1 className='text-center font-bold text-3xl mt-4 sm:text-5xl'>
 					Juan González
 				</h1>
 				<Link
-					className='block text-center mb-2 text-gray-700 dark:text-gray-300 text-lg sm:text-left'
+					className='block text-center mb-2 text-gray-400 text-lg'
 					href='https://github.com/juancho11gm'
 					target='_blank'
 				>
@@ -43,10 +45,10 @@ const OverviewCard = () => {
 					</Link>
 					.
 				</p>
-				<p className='mt-4 text-lg sm:mt-6'>
+				<p className='mt-4 text-lg sm:mt-2 text-gray-400'>
 					JavaScript and AI enthusiast.
 				</p>
-				<p className='text-gray-700 dark:text-gray-300 text-lg'>
+				<p className='text-lg text-gray-400'>
 					Learning everyday about tech and personal growth.
 				</p>
 			</div>

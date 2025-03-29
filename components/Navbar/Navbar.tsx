@@ -1,9 +1,11 @@
-import Link from 'next/link';
+import { Container } from '@components/Container/Container';
+import {
+	NavigationMenu,
+	NavigationMenuItem,
+	NavigationMenuLink,
+} from '@radix-ui/react-navigation-menu';
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
-import { Container } from '@components/Container/Container';
-import { MobileMenu } from '@components/MobileMenu/MobileMenu';
-import { ThemeToggle } from '@components/Icons/ThemeToggle/ThemeToggle';
 
 type NavLink = {
 	href: string;
@@ -15,15 +17,17 @@ const NavLink = ({ href, text }: NavLink) => {
 	const isActive = router.asPath === href;
 
 	return (
-		<Link
-			href={href}
-			className={classNames(
-				'hidden md:inline-block rounded-md sm:px-3 sm:py-2 hover:bg-gray-300  hover:dark:text-black',
-				isActive ? 'font-bold text-gray-900 dark:text-gray-50' : 'text-gray-400'
-			)}
-		>
-			<span>{text}</span>
-		</Link>
+		<NavigationMenuItem key={href + text} className='list-none'>
+			<NavigationMenuLink
+				href={href}
+				className={classNames(
+					'mx-1 group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground',
+					isActive && 'bg-muted'
+				)}
+			>
+				{text}
+			</NavigationMenuLink>
+		</NavigationMenuItem>
 	);
 };
 
@@ -31,13 +35,11 @@ const Navbar = () => {
 	return (
 		<Container>
 			<header className='relative flex justify-between items-center pt-8'>
-				<nav className='flex items-center md:block'>
+				<NavigationMenu className='items-center flex justify-center w-full sm:justify-start'>
 					<NavLink href='/' text='Home' />
 					<NavLink href='/projects' text='Projects' />
 					<NavLink href='/about' text='About' />
-					<MobileMenu />
-				</nav>
-				<ThemeToggle />
+				</NavigationMenu>
 			</header>
 		</Container>
 	);

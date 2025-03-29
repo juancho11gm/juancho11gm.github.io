@@ -1,13 +1,6 @@
 {
-	"grammarly.selectors": [
-		{
-			"language": "markdown",
-			"scheme": "file",
-			"pattern": "_posts/ssr-csr-ssg-isr.md"
-		},
-		{
-			"language": "markdown",
-			"scheme": "file"
-		}
-	]
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
 }

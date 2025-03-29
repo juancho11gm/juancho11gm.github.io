@@ -6,7 +6,7 @@ orientation: landscape
 date: '2022-12-15'
 author:
   name: Juan G
-  picture: '/assets/me/profilepic.jpg'
+  picture: '/assets/me/profilepic.png'
 ogImage:
   url: '/assets/blog/adventjs/adventjs.jpg'
 ---

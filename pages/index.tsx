@@ -21,7 +21,10 @@ export default function Index({ allPosts }: BlogProps) {
 				</Head>
 				<Container>
 					<OverviewCard />
-					<Link href='/about' className='underline mb-12 mt-6 block'>
+					<Link
+						href='/about'
+						className='underline mb-12 mt-6 block text-center'
+					>
 						Read about me.
 					</Link>
 					<SectionTitle text='Blog.' level={2} />

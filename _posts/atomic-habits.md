@@ -6,7 +6,7 @@ orientation: landscape
 date: '2022-12-19'
 author:
   name: Juan G
-  picture: '/assets/me/profilepic.jpg'
+  picture: '/assets/me/profilepic.png'
 ogImage:
   url: '/assets/blog/atomic-habits/atomic-habits.jpg'
 ---
@@ -33,8 +33,8 @@ By decomposing how you spend your life you will get what your habits are: the th
 
 The following 4 laws work as stages that definitive will guide you to adopt good habits.
 
-| 1       | 2         | 3           | 4          |
-| ------- | --------- | ----------- | ---------- |
+| 1       | 2          | 3           | 4          |
+| ------- | ---------- | ----------- | ---------- |
 | cue 🧏🏻  | craving 🌫 | response 👷🏼 | reward 🏅  |
 
 _The four stages of habit._

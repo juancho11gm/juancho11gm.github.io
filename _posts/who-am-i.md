@@ -6,7 +6,7 @@ orientation: square
 date: '2022-12-09'
 author:
   name: Juan G
-  picture: '/assets/me/profilepic.jpg'
+  picture: '/assets/me/profilepic.png'
 ogImage:
   url: '/assets/blog/who-am-i/cover.jpg'
 ---

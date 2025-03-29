@@ -6,7 +6,7 @@ orientation: landscape
 date: '2023-02-10'
 author:
   name: Juan G
-  picture: '/assets/me/profilepic.jpg'
+  picture: '/assets/me/profilepic.png'
 ogImage:
   url: '/assets/blog/context-reducer/cover.jpg'
 ---
