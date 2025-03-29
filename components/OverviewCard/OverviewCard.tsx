@@ -8,7 +8,7 @@ const OverviewCard = () => {
 			<div className='relative inline-block mx-auto'>
 				<div className='w-[200px] h-[200px] rounded-[50%] bg-neutral-900' />
 				<Image
-					src='/assets/me/fotopic.png'
+					src='/assets/me/profilepic.png'
 					className='absolute z-[1] bottom-0 left-0'
 					width={200}
 					height={200}
