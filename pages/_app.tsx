@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 				`,
 				}}
 			/>
-			<ThemeProvider attribute='class' defaultTheme='light'>
+			<ThemeProvider attribute='class' defaultTheme='dark'>
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>
